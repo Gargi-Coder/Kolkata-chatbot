@@ -1,0 +1,2312 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["My pleasure", "You're Welcome"],
+     "context": [""]
+    },
+    
+      {
+        "tag": "help",
+        "patterns": ["Help me", "I need assistance", "Can you help?", "I'm stuck"],
+        "responses": ["Of course! I'm here to help. What do you need assistance with?", "Don't worry, I'm here to help. What's the issue?", "I'll do my best to assist you. What seems to be the problem?", "Sure, I'm here to help. Please let me know what you're struggling with."]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Thanks a lot"],
+        "responses": ["You're welcome! Enjoy your time exploring Kolkata."]
+      },
+      {
+        "tag": "tourist_spots",
+        "patterns": ["Tell me about tourist spots", "What are the famous places in Kolkata?", "Tourist attractions"],
+        "responses": ["Kolkata has many famous tourist spots like Victoria Memorial, Indian Museum, Marble Palace, Belur Math, and more."]
+      },
+      {
+        "tag": "victoria_memorial",
+        "patterns": ["Tell me about Victoria Memorial", "What can I see at Victoria Memorial?", "Victoria Memorial details"],
+        "responses": ["Victoria Memorial is a majestic monument built in memory of Queen Victoria. It houses a museum with artifacts from the colonial era."]
+      },
+      {
+        "tag": "indian_museum",
+        "patterns": ["What's in the Indian Museum?", "Tell me about Indian Museum", "Indian Museum exhibits"],
+        "responses": ["The Indian Museum is the oldest in India, featuring a vast collection of artifacts, including archaeological exhibits, art, and ethnographic items."]
+      },
+      {
+        "tag": "marble_palace",
+        "patterns": ["Details about Marble Palace", "What's inside Marble Palace?", "Marble Palace information"],
+        "responses": ["Marble Palace is known for its marble walls and floors. It houses a private collection of Western sculptures, Victorian furniture, and paintings."]
+      },
+      {
+        "tag": "belur_math",
+        "patterns": ["Tell me about Belur Math", "What can I see at Belur Math?", "Belur Math details"],
+        "responses": ["Belur Math is the headquarters of the Ramakrishna Mission, with a unique blend of Hindu, Christian, and Islamic architectural styles."]
+      },
+      {
+        "tag": "st_pauls_cathedral",
+        "patterns": ["What's special about St. Paul's Cathedral?", "Tell me about St. Paul's Cathedral", "St. Paul's Cathedral information"],
+        "responses": ["St. Paul's Cathedral, built in the Gothic Revival style, is an Anglican cathedral with a serene ambiance, making it a peaceful place to visit."]
+      },
+      {
+        "tag": "kalighat_kali_temple",
+        "patterns": ["Details about Kalighat Kali Temple", "What can I see at Kalighat Kali Temple?", "Kalighat Kali Temple information"],
+        "responses": ["Kalighat Kali Temple is dedicated to the goddess Kali and is one of the 51 Shakti Peethas. The area around the temple has a vibrant atmosphere."]
+      },
+      {
+        "tag": "achipur",
+        "patterns": ["Tell me about Achipur", "What's special about Achipur?", "Achipur information"],
+        "responses": ["Achipur is known for the historic Achipur Chinese Temple and the Chinese tombs. It has a unique blend of Chinese and Indian influences."]
+      },
+      {
+        "tag": "sabarna_sangrahashala",
+        "patterns": ["Details about Sabarna Sangrahashala", "What can I see at Sabarna Sangrahashala?", "Sabarna Sangrahashala information"],
+        "responses": ["Sabarna Sangrahashala showcases the history and culture of the Sabarna Roy Choudhury family, one of the oldest Zamindar families in Kolkata."]
+      },
+      {
+        "tag": "student_class8_tour",
+        "patterns": [
+          "I am a student in class 8 and want to visit Kolkata. Where should I go?",
+          "As a class 8 student, which places in Kolkata would you recommend for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a student in class 8?",
+          "What are some educational places to visit in Kolkata for a class 8 student?",
+          "I'm an 8th-grade student planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "That's great! For a student in class 8 visiting Kolkata, I recommend exploring educational and fun places like the Science City, Indian Museum, Victoria Memorial, and Nicco Park.",
+          "Exciting! As a class 8 student, you'll enjoy exploring places like the Marble Palace, Jorasanko Thakur Bari, Prinsep Ghat, and Fort William in Kolkata.",
+          "Awesome choice! Consider visiting the Birla Industrial & Technological Museum, St. Paul's Cathedral, Eco Park, and the South Park Street Cemetery for a memorable experience."
+        ]
+      },
+      {
+        "tag": "student_class9_tour",
+        "patterns": [
+          "I am a student in class 9 and want to explore Kolkata. Where should I go?",
+          "As a class 9 student, which places in Kolkata are suitable for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a student in class 9?",
+          "What are some educational places to visit in Kolkata for a class 9 student?",
+          "I'm a 9th-grade student planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Fantastic! For a student in class 9 visiting Kolkata, consider exploring places like the Marble Palace, Dakshineswar Kali Temple, Jorasanko Thakur Bari, and Prinsep Ghat for a blend of history, culture, and leisure.",
+          "Great choice! As a class 9 student, you'll enjoy visiting Science City, Nicco Park, Victoria Terrace, and Rabindra Bharati Museum for a diverse experience in Kolkata.",
+          "Excellent decision! Explore the beauty of Kolkata by visiting Kalighat Kali Temple, Maidan, Belur Math, and the Indian Museum for a mix of spirituality, nature, and history."
+        ]
+      },
+      {
+        "tag": "student_class10_tour",
+        "patterns": [
+          "I am a student in class 10 and want to visit Kolkata. Where should I go?",
+          "As a class 10 student, which places in Kolkata are recommended for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a student in class 10?",
+          "What are some educational places to visit in Kolkata for a class 10 student?",
+          "I'm a 10th-grade student planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Excellent choice! For a student in class 10 visiting Kolkata, consider exploring places like Fort William, Maidan, Birla Industrial & Technological Museum, and Belur Math for a mix of history, science, and spirituality.",
+          "Wonderful! As a class 10 student, you'll enjoy visiting St. Paul's Cathedral, Nicco Park, Victoria Terrace, and the Maidan for a blend of cultural, recreational, and historical experiences.",
+          "Fantastic decision! Explore the vibrancy of Kolkata by visiting the Indian Museum, Marble Palace, Dakshineswar Kali Temple, and Prinsep Ghat for a rich cultural and historical experience."
+        ]
+      },
+      {
+        "tag": "student_class11_tour",
+        "patterns": [
+          "I am a student in class 11 and want to explore Kolkata. Where should I go?",
+          "As a class 11 student, which places in Kolkata are suitable for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a student in class 11?",
+          "What are some educational places to visit in Kolkata for a class 11 student?",
+          "I'm an 11th-grade student planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Wonderful! For a student in class 11 visiting Kolkata, consider exploring places like St. Paul's Cathedral, Nicco Park, Victoria Terrace, and the Maidan for a mix of cultural, recreational, and historical experiences.",
+          "Great choice! As a class 11 student, you'll enjoy visiting Science City, Nandan, Rabindra Sarovar, and Eco Park for a diverse and enriching experience in Kolkata.",
+          "Fantastic decision! Explore the vibrant art and culture of Kolkata by visiting Rabindra Bharati Museum, Jorasanko Thakur Bari, Marble Palace, and Kalighat Kali Temple."
+        ]
+      },
+      {
+        "tag": "student_class12_tour",
+        "patterns": [
+          "I am a student in class 12 and want to visit Kolkata. Where should I go?",
+          "As a class 12 student, which places in Kolkata are recommended for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a student in class 12?",
+          "What are some educational places to visit in Kolkata for a class 12 student?",
+          "I'm a 12th-grade student planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Fantastic choice! For a student in class 12 visiting Kolkata, consider exploring places like Kalighat Kali Temple, Marble Palace, Rabindra Bharati Museum, and the Princep Ghat for a blend of spirituality, art, and history.",
+          "Wonderful! As a class 12 student, you'll enjoy visiting Fort William, Eco Park, Birla Planetarium, and South Park Street Cemetery for a diverse and enriching experience in Kolkata.",
+          "Great decision! Explore the vibrant culture of Kolkata by visiting Nandan, Jorasanko Thakur Bari, Park Street, and the College Street for a memorable and educational trip."
+        ]
+      },
+      {
+        "tag": "student_college_freshman_tour",
+        "patterns": [
+          "I am a college freshman and want to explore Kolkata. Where should I go?",
+          "As a college freshman, which places in Kolkata are suitable for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a college freshman?",
+          "What are some educational places to visit in Kolkata for a college freshman?",
+          "I'm a college freshman planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Exciting times! For a college freshman visiting Kolkata, consider exploring places like Science City, Birla Planetarium, Park Street, and the South Park Street Cemetery for a mix of science, culture, and entertainment.",
+          "Fantastic choice! As a college freshman, you'll enjoy visiting Nicco Park, Victoria Terrace, Rabindra Sarovar, and the Indian Museum for a diverse and enriching experience in Kolkata.",
+          "Great decision! Explore the vibrant culture of Kolkata by visiting Nandan, Jorasanko Thakur Bari, Marble Palace, and the Princep Ghat for a memorable and educational trip."
+        ]
+      },
+      {
+        "tag": "student_college_sophomore_tour",
+        "patterns": [
+          "I am a college sophomore and want to explore Kolkata. Where should I go?",
+          "As a college sophomore, which places in Kolkata are recommended for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a college sophomore?",
+          "What are some educational places to visit in Kolkata for a college sophomore?",
+          "I'm a college sophomore planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Great choice! For a college sophomore visiting Kolkata, consider exploring places like Indian Museum, Maidan, Alipore Zoo, and the Marble Palace for a mix of history, nature, and art.",
+          "Fantastic decision! As a college sophomore, you'll enjoy visiting Science City, Nandan, Rabindra Sarovar, and Eco Park for a diverse and enriching experience in Kolkata.",
+          "Wonderful! Explore the vibrant art and culture of Kolkata by visiting Rabindra Bharati Museum, Park Street, Jorasanko Thakur Bari, and the College Street for a memorable and educational trip."
+        ]
+      },
+      {
+        "tag": "student_college_junior_tour",
+        "patterns": [
+          "I am a college junior and want to visit Kolkata. Where should I go?",
+          "As a college junior, which places in Kolkata are suitable for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a college junior?",
+          "What are some educational places to visit in Kolkata for a college junior?",
+          "I'm a college junior planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Exciting times ahead! For a college junior visiting Kolkata, consider exploring places like Nandan, Rabindra Sarovar, Eco Park, and College Street for a mix of arts, nature, and cultural experiences.",
+          "Fantastic choice! As a college junior, you'll enjoy visiting St. Paul's Cathedral, Nicco Park, Victoria Terrace, and the Maidan for a blend of cultural, recreational, and historical experiences.",
+          "Great decision! Explore the vibrant culture of Kolkata by visiting Rabindra Bharati Museum, Jorasanko Thakur Bari, Marble Palace, and the Princep Ghat for a memorable and educational trip."
+        ]
+      },
+      {
+        "tag": "student_college_senior_tour",
+        "patterns": [
+          "I am a college senior and want to explore Kolkata. Where should I go?",
+          "As a college senior, which places in Kolkata are recommended for a visit?",
+          "Can you suggest tourist spots in Kolkata suitable for a college senior?",
+          "What are some educational places to visit in Kolkata for a college senior?",
+          "I'm a college senior planning a trip to Kolkata. What are the best places to explore?"
+        ],
+        "responses": [
+          "Congratulations on reaching your senior year! For a college senior visiting Kolkata, consider exploring places like Eco Park, Jorasanko Thakur Bari, Street Food in Park Street, and Kalighat Kali Temple for a memorable and diverse experience.",
+          "Great choice! As a college senior, you'll enjoy visiting Nicco Park, Victoria Terrace, Rabindra Sarovar, and the Indian Museum for a diverse and enriching experience in Kolkata.",
+          "Fantastic decision! Explore the vibrant art and culture of Kolkata by visiting Rabindra Bharati Museum, Park Street, Jorasanko Thakur Bari, and the College Street for a memorable and educational trip."
+        ]
+      },
+      {
+        "tag": "tourist_spots",
+        "patterns": ["Tell me about tourist spots", "What are the famous places in Kolkata?", "Tourist attractions"],
+        "responses": ["Kolkata has many famous tourist spots like Victoria Memorial, Indian Museum, Marble Palace, Belur Math, and more."]
+      },
+      {
+        "tag": "age_visit_kolkata",
+        "patterns": [
+          "I am 30 years old and want to visit Kolkata",
+          "Planning a trip to Kolkata at 30",
+          "Best places to visit in Kolkata for a 30-year-old",
+          "Tell me about attractions in Kolkata suitable for a 30-year-old",
+          "What should a 30-year-old do in Kolkata?",
+          "I'm in my 30s, suggest things to do in Kolkata"
+        ],
+        "responses": [
+          "That's wonderful! Kolkata has a rich cultural heritage. Depending on your interests, you might enjoy exploring Victoria Memorial, Indian Museum, and other historic sites.",
+          "Kolkata has a vibrant atmosphere. Consider visiting Victoria Memorial, Indian Museum, and enjoying the local cuisine for a delightful experience.",
+          "In your 30s, you'll appreciate the cultural richness of Kolkata. Don't miss Victoria Memorial, Indian Museum, and the lively markets during your visit."
+        ]
+      },
+      {
+        "tag": "victoria_memorial",
+        "patterns": ["Tell me about Victoria Memorial", "What can I see at Victoria Memorial?", "Victoria Memorial details"],
+        "responses": ["Victoria Memorial is a majestic monument with a museum showcasing historical artifacts, paintings, and sculptures."]
+      },
+      {
+        "tag": "indian_museum",
+        "patterns": ["What's in the Indian Museum?", "Tell me about Indian Museum", "Indian Museum exhibits"],
+        "responses": ["The Indian Museum is the oldest museum in India, featuring a diverse collection of artifacts, including archaeological finds and art pieces."]
+      },
+      {
+        "tag": "nehru_children_museum",
+        "patterns": ["Tell me about Nehru Children's Museum", "What's in Nehru Children's Museum?", "Nehru Children's Museum attractions"],
+        "responses": ["Nehru Children's Museum is designed for children with interactive exhibits, science demonstrations, and educational activities."]
+      },
+      {
+        "tag": "birla_planetarium",
+        "patterns": ["Tell me about Birla Planetarium", "What can I see at Birla Planetarium?", "Birla Planetarium details"],
+        "responses": ["Birla Planetarium is ideal for students interested in astronomy, offering shows on astronomy and space regularly."]
+      },
+      {
+        "tag": "jorasanko_thakur_bari",
+        "patterns": ["Tell me about Jorasanko Thakur Bari", "What can I see at Jorasanko Thakur Bari?", "Jorasanko Thakur Bari details"],
+        "responses": ["Jorasanko Thakur Bari is the ancestral home of Rabindranath Tagore, featuring insights into the life and works of the poet and philosopher."]
+      },
+      {
+        "tag": "religious_places",
+        "patterns": [
+          "I want to visit religious places in Kolkata",
+          "Best religious sites in Kolkata",
+          "Religious places to explore in Kolkata",
+          "Tell me about temples in Kolkata",
+          "Planning a religious trip to Kolkata",
+          "Suggest famous churches in Kolkata",
+          "What are the popular mosques in Kolkata?",
+          "I'm interested in visiting religious sites",
+          "Guide me to Kolkata's spiritual places",
+          "List of famous synagogues in Kolkata"
+        ],
+        "responses": [
+          "Certainly! Kolkata is known for its diverse religious sites. You might consider visiting Dakshineswar Kali Temple, Kalighat Kali Temple, and Belur Math for a spiritual experience.",
+          "Kolkata has a rich religious heritage. Some notable places include Dakshineswar Kali Temple, St. Paul's Cathedral, and Nakhoda Mosque. Each offers a unique spiritual atmosphere.",
+          "For a religious tour, explore Dakshineswar Kali Temple, Marble Palace Thakurbari, and Birla Mandir. These places reflect Kolkata's cultural and religious diversity."
+        ]
+      },
+      {
+        "tag": "dakshineswar_kali_temple",
+        "patterns": ["Tell me about Dakshineswar Kali Temple", "What can I see at Dakshineswar Kali Temple?", "Dakshineswar Kali Temple details"],
+        "responses": ["Dakshineswar Kali Temple is an important religious site with a serene atmosphere, dedicated to Goddess Kali. Explore the temple complex, including the famous Navaratna Temple."]
+      },
+      {
+        "tag": "belur_math",
+        "patterns": ["Tell me about Belur Math", "What can I see at Belur Math?", "Belur Math details"],
+        "responses": ["Belur Math is the headquarters of the Ramakrishna Mission, with a unique blend of Hindu, Christian, and Islamic architectural styles."]
+      },
+      {
+        "tag": "st_pauls_cathedral",
+        "patterns": ["What's special about St. Paul's Cathedral?", "Tell me about St. Paul's Cathedral", "St. Paul's Cathedral information"],
+        "responses": ["St. Paul's Cathedral, built in the Gothic Revival style, is an Anglican cathedral with a serene ambiance, making it a peaceful place to visit."]
+      },
+      {
+        "tag": "nakhoda_mosque",
+        "patterns": ["Tell me about Nakhoda Mosque", "What can I see at Nakhoda Mosque?", "Nakhoda Mosque details"],
+        "responses": ["Nakhoda Mosque is a prominent mosque in Kolkata known for its impressive architecture and cultural significance."]
+      },
+      {
+        "tag": "birla_mandir",
+        "patterns": ["Tell me about Birla Mandir", "What can I see at Birla Mandir?", "Birla Mandir details"],
+        "responses": ["Birla Mandir, also known as the Lakshmi Narayan Temple, is a Hindu temple with intricate architecture and beautiful surroundings."]
+      },
+      {
+        "tag": "shopping_in_kolkata",
+        "patterns": [
+          "Best places to shop in Kolkata",
+          "Tell me about shopping in Kolkata",
+          "Where can I buy souvenirs in Kolkata?",
+          "Shopping districts in Kolkata",
+          "Famous markets in Kolkata",
+          "Guide me for shopping in Kolkata",
+          "I want to explore Kolkata's markets",
+          "Suggest shopping destinations in Kolkata",
+          "What are the popular malls in Kolkata?",
+          "Any recommendations for street shopping in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata offers a vibrant shopping experience. You can explore New Market, South City Mall, and Gariahat for a diverse range of shopping options, from street markets to upscale malls."
+        ]
+      },
+      {
+        "tag": "cuisine_in_kolkata",
+        "patterns": [
+          "Tell me about Kolkata's cuisine",
+          "Best places to eat in Kolkata",
+          "Famous street food in Kolkata",
+          "Guide me for food in Kolkata",
+          "Recommended restaurants in Kolkata",
+          "I want to try Kolkata's local dishes",
+          "Suggest famous food joints in Kolkata",
+          "What are the must-try sweets in Kolkata?",
+          "Any popular seafood restaurants in Kolkata?",
+          "Tell me about the food culture in Kolkata"
+        ],
+        "responses": [
+          "Kolkata is a food lover's paradise! You must try local specialties like Kathi Rolls, Rosogolla, and Fish Curry. For a diverse culinary experience, visit Park Street and Dacres Lane."
+        ]
+      },
+      {
+        "tag": "historical_kolkata",
+        "patterns": [
+          "Tell me about the history of Kolkata",
+          "Historical places to visit in Kolkata",
+          "Guide me through Kolkata's history",
+          "Famous historical monuments in Kolkata",
+          "I want to explore the heritage of Kolkata",
+          "Suggest historical sites in Kolkata",
+          "What are the oldest buildings in Kolkata?",
+          "Tell me about the colonial history of Kolkata",
+          "Historical walking tour in Kolkata",
+          "Must-visit heritage sites in Kolkata"
+        ],
+        "responses": [
+          "Kolkata has a rich historical background. Explore places like Marble Palace, Howrah Bridge, and Writer's Building to delve into the city's colonial history and architectural heritage."
+        ]
+      },
+      {
+        "tag": "arts_and_culture",
+        "patterns": [
+          "Tell me about arts and culture in Kolkata",
+          "Cultural events in Kolkata",
+          "Guide me through Kolkata's art scene",
+          "Famous cultural festivals in Kolkata",
+          "I want to explore Kolkata's artistic side",
+          "Suggest cultural activities in Kolkata",
+          "Best time to experience Kolkata's cultural events",
+          "Tell me about theaters in Kolkata",
+          "Art galleries to visit in Kolkata",
+          "Cultural tour in Kolkata"
+        ],
+        "responses": [
+          "Kolkata is a hub of arts and culture. Explore events at Nandan, attend Durga Puja celebrations, and visit galleries like Academy of Fine Arts for a vibrant cultural experience."
+        ]
+      },
+      {
+        "tag": "parks_and_gardens",
+        "patterns": [
+          "Tell me about parks and gardens in Kolkata",
+          "Best green spaces in Kolkata",
+          "Guide me through Kolkata's parks",
+          "Famous gardens to visit in Kolkata",
+          "I want to spend time in nature in Kolkata",
+          "Suggest picnic spots in Kolkata",
+          "What are the popular jogging parks in Kolkata?",
+          "Tell me about Eco Tourism Park",
+          "Botanical gardens in Kolkata",
+          "Green lung areas in Kolkata"
+        ],
+        "responses": [
+          "Kolkata offers serene parks and gardens. Explore Maidan, Eco Tourism Park, and Botanical Gardens for a relaxing day amidst nature."
+        ]
+      },
+      {
+        "tag": "river_cruises",
+        "patterns": [
+          "Tell me about river cruises in Kolkata",
+          "Best river cruise experiences in Kolkata",
+          "Guide me for boat rides in Kolkata",
+          "Famous ghats for river cruises in Kolkata",
+          "I want to explore the Hooghly River",
+          "Suggest evening boat rides in Kolkata",
+          "How to book a river cruise in Kolkata?",
+          "Tell me about boat tours near Kolkata",
+          "Sunset cruises in Kolkata",
+          "Riverfront experiences in Kolkata"
+        ],
+        "responses": [
+          "Enjoy the scenic beauty of the Hooghly River with river cruises. Consider exploring Princep Ghat, Millennium Park, and Babughat for delightful boat rides."
+        ]
+      },
+      {
+        "tag": "festivals_in_kolkata",
+        "patterns": [
+          "Tell me about festivals in Kolkata",
+          "Best time to visit Kolkata for festivals",
+          "Guide me through Kolkata's festive season",
+          "Famous cultural festivals in Kolkata",
+          "I want to experience Kolkata's festive vibes",
+          "Suggest events during Durga Puja in Kolkata",
+          "What are the major religious festivals in Kolkata?",
+          "Tell me about Diwali celebrations in Kolkata",
+          "Cultural events during Christmas in Kolkata",
+          "New Year celebrations in Kolkata"
+        ],
+        "responses": [
+          "Kolkata is known for its grand festivals. Experience the cultural extravaganza during Durga Puja, Diwali, Christmas, and New Year. Join the celebrations at popular pandals and enjoy the festive spirit."
+        ]
+      },
+      {
+        "tag": "nightlife_in_kolkata",
+        "patterns": [
+          "Tell me about nightlife in Kolkata",
+          "Best nightclubs in Kolkata",
+          "Guide me through Kolkata's nightlife scene",
+          "Famous pubs and bars in Kolkata",
+          "I want to explore Kolkata's nightlife",
+          "Suggest places for live music in Kolkata",
+          "What are the popular late-night eateries in Kolkata?",
+          "Tell me about cultural events at night in Kolkata",
+          "Night markets in Kolkata",
+          "How safe is nightlife in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata has a vibrant nightlife. Explore Park Street, visit Someplace Else for live music, and enjoy the cultural events at Nandan for a lively night out."
+        ]
+      },
+      {
+        "tag": "educational_institutions",
+        "patterns": [
+          "Tell me about educational institutions in Kolkata",
+          "Famous universities in Kolkata",
+          "Guide me through Kolkata's educational scene",
+          "Top colleges in Kolkata",
+          "I want to explore Kolkata's academic environment",
+          "Suggest historical educational buildings in Kolkata",
+          "Best libraries to visit in Kolkata",
+          "Tell me about the Presidency University",
+          "Famous schools in Kolkata",
+          "Education-related events in Kolkata"
+        ],
+        "responses": [
+          "Kolkata has a rich academic heritage. Explore educational institutions like Presidency University, Jadavpur University, and visit iconic libraries like the National Library for a glimpse into Kolkata's educational legacy."
+        ]
+      },
+      {
+        "tag": "transportation_in_kolkata",
+        "patterns": [
+          "Tell me about transportation in Kolkata",
+          "Best ways to get around Kolkata",
+          "Guide me through Kolkata's public transportation",
+          "Famous modes of transport in Kolkata",
+          "I want to explore Kolkata using public transit",
+          "Suggest reliable taxi services in Kolkata",
+          "How to use the Kolkata Metro?",
+          "Tell me about the iconic yellow taxis in Kolkata",
+          "Public transportation tips for tourists in Kolkata",
+          "Cycle rickshaw experiences in Kolkata"
+        ],
+        "responses": [
+          "Getting around Kolkata is convenient. Explore the city using the Kolkata Metro, iconic yellow taxis, and cycle rickshaws. Plan your routes and enjoy the diverse modes of transportation."
+        ]
+      },
+      {
+        "tag": "shopping_places",
+        "patterns": [
+          "Best places to shop in Kolkata",
+          "Tell me about shopping in Kolkata",
+          "Where can I buy souvenirs in Kolkata?",
+          "Shopping districts in Kolkata",
+          "Famous markets in Kolkata",
+          "Guide me for shopping in Kolkata",
+          "I want to explore Kolkata's markets",
+          "Suggest shopping destinations in Kolkata",
+          "What are the popular malls in Kolkata?",
+          "Any recommendations for street shopping in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata offers a vibrant shopping experience. Explore New Market, South City Mall, Gariahat, Dakshinapan, and City Centre Salt Lake for a diverse range of shopping options."
+        ]
+      },
+      {
+        "tag": "new_market",
+        "patterns": ["Tell me about New Market", "What can I buy at New Market?", "New Market details"],
+        "responses": ["New Market is one of Kolkata's oldest and most popular markets, offering a wide range of products, including clothing, accessories, spices, and more."]
+      },
+      {
+        "tag": "south_city_mall",
+        "patterns": ["Tell me about South City Mall", "What can I find at South City Mall?", "South City Mall details"],
+        "responses": ["South City Mall is a large shopping complex with a variety of stores, restaurants, and entertainment options, making it a popular destination for shopping enthusiasts."]
+      },
+      {
+        "tag": "gariahat",
+        "patterns": ["Tell me about Gariahat market", "What can I explore at Gariahat?", "Gariahat market details"],
+        "responses": ["Gariahat is a bustling market known for its traditional Bengali sarees, accessories, and a variety of street food. It's a great place to experience the local culture."]
+      },
+      {
+        "tag": "dakshinapan",
+        "patterns": ["Tell me about Dakshinapan", "What can I find at Dakshinapan?", "Dakshinapan details"],
+        "responses": ["Dakshinapan is a craft complex showcasing traditional handicrafts, handloom items, and artifacts from different states of India. It's a unique shopping destination."]
+      },
+      {
+        "tag": "city_centre_salt_lake",
+        "patterns": ["Tell me about City Centre Salt Lake", "What can I explore at City Centre Salt Lake?", "City Centre Salt Lake details"],
+        "responses": ["City Centre Salt Lake is a shopping and entertainment destination with a range of retail outlets, restaurants, and a multiplex cinema, providing a complete leisure experience."]
+      },
+      {
+        "tag": "jewelry_shopping",
+        "patterns": [
+          "Best places for jewelry shopping in Kolkata",
+          "Tell me about jewelry shops in Kolkata",
+          "Where can I buy traditional jewelry in Kolkata?",
+          "Recommended jewelry markets in Kolkata",
+          "I want to explore Kolkata's jewelry stores",
+          "Suggest famous jewelry designers in Kolkata",
+          "What are the popular gold showrooms in Kolkata?",
+          "Tell me about traditional Bengali jewelry",
+          "Best places for antique jewelry in Kolkata",
+          "Any recommendations for silver jewelry in Kolkata?"
+        ],
+        "responses": [
+          "For exquisite jewelry shopping, consider exploring Bowbazar, College Street, and Burrabazar. These areas are known for a wide range of traditional and modern jewelry stores."
+        ]
+      },
+      {
+        "tag": "ethnic_wear_shopping",
+        "patterns": [
+          "Best places for ethnic wear shopping in Kolkata",
+          "Tell me about ethnic wear boutiques in Kolkata",
+          "Where can I buy traditional Bengali sarees?",
+          "Recommended shops for ethnic wear in Kolkata",
+          "I want to explore Kolkata's traditional clothing stores",
+          "Suggest famous ethnic wear designers in Kolkata",
+          "What are the popular markets for sarees in Kolkata?",
+          "Tell me about traditional Bengali attire",
+          "Best places for handloom sarees in Kolkata",
+          "Any recommendations for men's ethnic wear in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata is a hub for ethnic wear shopping. Check out places like Gariahat, Tantuja, and New Market for a variety of traditional Bengali sarees, kurta sets, and more."
+        ]
+      },
+      {
+        "tag": "antique_shopping",
+        "patterns": [
+          "Best places for antique shopping in Kolkata",
+          "Tell me about antique shops in Kolkata",
+          "Where can I find vintage items in Kolkata?",
+          "Recommended markets for antique shopping",
+          "I want to explore Kolkata's antique stores",
+          "Suggest famous antique dealers in Kolkata",
+          "What are the popular flea markets in Kolkata?",
+          "Tell me about traditional Bengali antiques",
+          "Best places for antique furniture in Kolkata",
+          "Any recommendations for collectibles in Kolkata?"
+        ],
+        "responses": [
+          "For antique enthusiasts, consider visiting markets like Mullick Ghat, Chor Bazaar, and Russell Street. These areas are known for a diverse collection of vintage items and antiques."
+        ]
+      },
+      {
+        "tag": "book_shopping",
+        "patterns": [
+          "Best places for book shopping in Kolkata",
+          "Tell me about bookstores in Kolkata",
+          "Where can I find rare books in Kolkata?",
+          "Recommended book markets in Kolkata",
+          "I want to explore Kolkata's literary scene",
+          "Suggest famous bookshops in Kolkata",
+          "What are the popular second-hand bookstores in Kolkata?",
+          "Tell me about traditional Bengali literature",
+          "Best places for academic books in Kolkata",
+          "Any recommendations for poetry books in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata is a haven for book lovers. Check out College Street, Oxford Bookstore, and Starmark for an extensive collection of books, including rare and academic titles."
+        ]
+      },
+      {
+        "tag": "handicraft_shopping",
+        "patterns": [
+          "Best places for handicraft shopping in Kolkata",
+          "Tell me about handicraft stores in Kolkata",
+          "Where can I buy traditional Bengali handicrafts?",
+          "Recommended markets for handicraft shopping",
+          "I want to explore Kolkata's handicraft markets",
+          "Suggest famous handicraft designers in Kolkata",
+          "What are the popular craft fairs in Kolkata?",
+          "Tell me about traditional Bengali handicrafts",
+          "Best places for handcrafted gifts in Kolkata",
+          "Any recommendations for pottery in Kolkata?"
+        ],
+        "responses": [
+          "For authentic handicrafts, explore places like Dakshinapan, Indian Museum Craft Store, and Gariahat Handicraft Market. These areas showcase a diverse range of traditional Bengali handicrafts."
+        ]
+      },
+      {
+        "tag": "electronic_shopping",
+        "patterns": [
+          "Best places for electronic shopping in Kolkata",
+          "Tell me about electronic stores in Kolkata",
+          "Where can I buy gadgets in Kolkata?",
+          "Recommended markets for electronic shopping",
+          "I want to explore Kolkata's tech scene",
+          "Suggest famous electronic retailers in Kolkata",
+          "What are the popular gadget markets in Kolkata?",
+          "Tell me about traditional Bengali electronic products",
+          "Best places for affordable electronics in Kolkata",
+          "Any recommendations for computer accessories in Kolkata?"
+        ],
+        "responses": [
+          "For electronic shopping, visit places like Chandni Market, Nehru Road, and BBD Bagh. These areas are known for a variety of electronic stores and gadget markets."
+        ]
+      },
+      {
+        "tag": "designer_boutiques",
+        "patterns": [
+          "Best designer boutiques in Kolkata",
+          "Tell me about fashion designers in Kolkata",
+          "Where can I buy designer clothing in Kolkata?",
+          "Recommended boutiques for designer wear",
+          "I want to explore Kolkata's fashion scene",
+          "Suggest famous fashion designers in Kolkata",
+          "What are the popular designer markets in Kolkata?",
+          "Tell me about traditional Bengali fashion",
+          "Best places for bespoke clothing in Kolkata",
+          "Any recommendations for couture in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata has a thriving fashion scene. Explore places like Quest Mall, Elgin Road, and Park Street for designer boutiques and stores offering a range of fashionable clothing."
+        ]
+      },
+      {
+        "tag": "souvenir_shopping",
+        "patterns": [
+          "Best places for souvenir shopping in Kolkata",
+          "Tell me about souvenir shops in Kolkata",
+          "Where can I buy unique souvenirs in Kolkata?",
+          "Recommended markets for souvenir shopping",
+          "I want to bring back Kolkata mementos",
+          "Suggest famous souvenir stores in Kolkata",
+          "What are the popular souvenir markets in Kolkata?",
+          "Tell me about traditional Bengali souvenirs",
+          "Best places for handmade souvenirs in Kolkata",
+          "Any recommendations for cultural souvenirs in Kolkata?"
+        ],
+        "responses": [
+          "For memorable souvenirs, explore markets like New Market, Dakshinapan, and Kumortuli. These areas offer a range of unique items capturing the essence of Kolkata."
+        ]
+      },
+      {
+        "tag": "fashion_accessories_shopping",
+        "patterns": [
+          "Best places for fashion accessories shopping in Kolkata",
+          "Tell me about accessories stores in Kolkata",
+          "Where can I buy trendy accessories in Kolkata?",
+          "Recommended markets for accessory shopping",
+          "I want to explore Kolkata's accessory scene",
+          "Suggest famous accessory designers in Kolkata",
+          "What are the popular accessory markets in Kolkata?",
+          "Tell me about traditional Bengali accessories",
+          "Best places for handmade accessories in Kolkata",
+          "Any recommendations for jewelry and bags in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata offers a variety of fashion accessories. Check out Camac Street, Hatibagan, and Gariahat for trendy jewelry, bags, and other accessories to enhance your style."
+        ]
+      },
+      {
+        "tag": "cosmetics_shopping",
+        "patterns": [
+          "Best places for cosmetics shopping in Kolkata",
+          "Tell me about cosmetic stores in Kolkata",
+          "Where can I buy beauty products in Kolkata?",
+          "Recommended markets for cosmetic shopping",
+          "I want to explore Kolkata's beauty scene",
+          "Suggest famous cosmetic retailers in Kolkata",
+          "What are the popular beauty markets in Kolkata?",
+          "Tell me about traditional Bengali beauty products",
+          "Best places for natural cosmetics in Kolkata",
+          "Any recommendations for skincare in Kolkata?"
+        ],
+        "responses": [
+          "For cosmetic shopping, explore areas like Forum Mall, New Market, and South City Mall. These places offer a variety of cosmetic stores and beauty product outlets."
+        ]
+      },
+      {
+        "tag": "ganga_ghats",
+        "patterns": [
+          "I want to visit Ganga Ghats in Kolkata",
+          "Best Ganga Ghats to explore in Kolkata",
+          "Tell me about the ghats along the Ganges",
+          "Planning to visit Ganga Ghats in Kolkata",
+          "Suggest famous Ganga Ghats in Kolkata",
+          "What are the popular riverfronts in Kolkata?",
+          "I'm interested in the Ganga Ghats",
+          "Tell me about the rituals at Ganga Ghats",
+          "Best time to visit Ganga Ghats in Kolkata",
+          "Any recommendations for boat rides on the Ganges?"
+        ],
+        "responses": [
+          "Exploring the Ganga Ghats is a great idea. Consider visiting Dakshineswar Ghat, Babughat, and Princep Ghat for a serene experience by the Ganges. Don't miss the evening aarti ceremonies."
+        ]
+      },
+      {
+        "tag": "dakshineswar_ghat",
+        "patterns": ["Tell me about Dakshineswar Ghat", "What can I see at Dakshineswar Ghat?", "Dakshineswar Ghat details"],
+        "responses": ["Dakshineswar Ghat offers a tranquil atmosphere along the Ganges. Visit Dakshineswar Kali Temple and enjoy the beautiful view of the river from the ghat."]
+      },
+      {
+        "tag": "babughat",
+        "patterns": ["Tell me about Babughat", "What can I see at Babughat?", "Babughat details"],
+        "responses": ["Babughat is a popular Ghat in Kolkata, known for its cultural significance and events. It's a great place to experience the essence of life along the Ganges."]
+      },
+      {
+        "tag": "princep_ghat",
+        "patterns": ["Tell me about Princep Ghat", "What can I see at Princep Ghat?", "Princep Ghat details"],
+        "responses": ["Princep Ghat is a historical and recreational spot along the Hooghly River. Enjoy a leisurely walk, boat rides, and stunning views of the Vidyasagar Setu."]
+      },
+      {
+        "tag": "rituals_at_ghats",
+        "patterns": [
+          "Tell me about rituals at Ganga Ghats",
+          "What rituals take place at the Ganges Ghats?",
+          "Guide me through the Ganga Aarti",
+          "Tell me about Ganga Snan",
+          "I want to witness Ganga Puja rituals",
+          "Suggest Ganga Ghats for spiritual experiences",
+          "Tell me about evening ceremonies at Ganga Ghats",
+          "Best time for Ganga Aarti in Kolkata",
+          "What is the significance of Ganga Aarti?",
+          "Any recommendations for participating in Ganga rituals?"
+        ],
+        "responses": [
+          "The Ganga Ghats are rich in rituals. Witness the Ganga Aarti at Babughat and Dakshineswar Ghat. Many ghats host ceremonies like Ganga Snan and Ganga Puja, providing a spiritual experience."
+        ]
+      },
+      {
+        "tag": "best_time_to_visit_ghats",
+        "patterns": [
+          "When is the best time to visit Ganga Ghats?",
+          "Ideal months for exploring Ganga Ghats",
+          "Weather conditions for Ganga Ghats visit",
+          "Best season for visiting the Ganges Ghats",
+          "I'm planning a trip, when to visit Ganga Ghats?",
+          "Tell me about the monsoon season at Ganga Ghats",
+          "Recommended time for a sunrise visit to Ganga Ghats",
+          "Weather tips for Ganga Ghats exploration",
+          "Any festivals celebrated at Ganga Ghats?",
+          "Suggest the best time for a boat ride on the Ganges"
+        ],
+        "responses": [
+          "The best time to visit Ganga Ghats is during the winter months, from October to March, when the weather is pleasant. Avoid the monsoon for Ghat visits. Sunrise and sunset offer picturesque views."
+        ]
+      },
+      {
+        "tag": "boat_rides_on_ganges",
+        "patterns": [
+          "Tell me about boat rides on the Ganges",
+          "Best places for boat rides in Kolkata",
+          "Guide me through Ganges boat tours",
+          "Famous ghats for boat rides in Kolkata",
+          "I want to explore the Ganges by boat",
+          "Suggest evening boat rides on the Ganges",
+          "How to book a boat ride in Kolkata?",
+          "Tell me about boat tours near Kolkata",
+          "Sunset cruises on the Ganges",
+          "Riverfront experiences in Kolkata"
+        ],
+        "responses": [
+          "Enjoy the scenic beauty of the Ganges with boat rides. Consider exploring Princep Ghat, Millennium Park, and Babughat for delightful boat rides and sunset cruises."
+        ]
+      },
+      {
+        "tag": "religious_significance_of_ghats",
+        "patterns": [
+          "Tell me about the religious significance of Ganga Ghats",
+          "Why are Ganga Ghats important in Kolkata?",
+          "Guide me through the spiritual importance of Ghats",
+          "Tell me about the cultural significance of Ganges Ghats",
+          "I want to understand the history of Ganga Ghats",
+          "Suggest Ganga Ghats for religious experiences",
+          "Tell me about the festivals celebrated at Ganga Ghats",
+          "Significance of the Ganges River in Kolkata",
+          "Any rituals associated with the Ganges in Kolkata?",
+          "Tell me about the folklore related to Ganga Ghats"
+        ],
+        "responses": [
+          "Ganga Ghats hold immense religious significance. They are not just cultural landmarks but also witness various rituals and festivals. Explore Dakshineswar Ghat, Babughat, and Princep Ghat for a deeper understanding."
+        ]
+      },
+      {
+        "tag": "green_parks",
+        "patterns": [
+          "I want to visit green parks in Kolkata",
+          "Best green spaces in Kolkata",
+          "Tell me about parks and gardens in Kolkata",
+          "Recommended open spaces in Kolkata",
+          "I want to spend time in nature in Kolkata",
+          "Suggest picnic spots in Kolkata",
+          "What are the popular jogging parks in Kolkata?",
+          "Tell me about Eco Tourism Park",
+          "Botanical gardens in Kolkata",
+          "Green lung areas in Kolkata"
+        ],
+        "responses": [
+          "Kolkata offers serene parks and gardens. Explore Maidan, Eco Tourism Park, Botanical Gardens, and Central Park for a relaxing day amidst nature."
+        ]
+      },
+      {
+        "tag": "maidan",
+        "patterns": ["Tell me about Maidan in Kolkata", "What can I do at Maidan?", "Maidan details"],
+        "responses": ["Maidan is a vast urban park where you can enjoy activities like walking, sports, and picnics. It's often referred to as the 'lungs of Kolkata.'"]
+      },
+      {
+        "tag": "eco_tourism_park",
+        "patterns": ["Tell me about Eco Tourism Park", "What can I do at Eco Tourism Park?", "Eco Tourism Park details"],
+        "responses": ["Eco Tourism Park is a popular destination offering eco-friendly activities, boat rides, and landscaped gardens. It's a great place for families and nature enthusiasts."]
+      },
+      {
+        "tag": "botanical_gardens",
+        "patterns": ["Tell me about Botanical Gardens in Kolkata", "What can I see at Botanical Gardens?", "Botanical Gardens details"],
+        "responses": ["Botanical Gardens is a historical garden housing a wide variety of plants and the iconic Great Banyan Tree. It's a peaceful retreat for nature lovers."]
+      },
+      {
+        "tag": "central_park",
+        "patterns": ["Tell me about Central Park in Kolkata", "What can I do at Central Park?", "Central Park details"],
+        "responses": ["Central Park is a popular park with a lake, walking paths, and recreational areas. It's a wonderful place to relax and unwind in the heart of the city."]
+      },
+      {
+        "tag": "picnic_spots",
+        "patterns": [
+          "Best picnic spots in Kolkata",
+          "Tell me about places for a picnic in Kolkata",
+          "Recommended parks for a picnic",
+          "I want to have a picnic in Kolkata",
+          "Suggest family-friendly picnic spots",
+          "What are the popular lakeside picnic spots in Kolkata?",
+          "Tell me about riverside picnic areas in Kolkata",
+          "Best green areas for a group picnic",
+          "Picnic spots with playgrounds in Kolkata",
+          "Any recommendations for secluded picnic spots?"
+        ],
+        "responses": [
+          "For a delightful picnic experience, consider Maidan, Eco Tourism Park, Central Park, and Nicco Park. These areas provide a perfect setting for a relaxing day out with family or friends."
+        ]
+      },
+      {
+        "tag": "jogging_parks",
+        "patterns": [
+          "Best jogging parks in Kolkata",
+          "Tell me about jogging tracks in Kolkata",
+          "Recommended parks for running",
+          "I want to explore jogging trails in Kolkata",
+          "Suggest parks with fitness amenities",
+          "What are the popular morning jog spots in Kolkata?",
+          "Tell me about lakeside jogging areas in Kolkata",
+          "Best green spaces for jogging in the evening",
+          "Jogging parks with a view in Kolkata",
+          "Any recommendations for nature trails in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata provides excellent jogging parks. Explore Maidan, Rabindra Sarobar, and Millennium Park for jogging tracks amidst greenery and scenic views."
+        ]
+      },
+      {
+        "tag": "childrens_park",
+        "patterns": [
+          "Best children's parks in Kolkata",
+          "Tell me about parks suitable for kids",
+          "Recommended playgrounds in Kolkata",
+          "I want to take my kids to a park in Kolkata",
+          "Suggest family-friendly parks",
+          "What are the popular amusement parks for children in Kolkata?",
+          "Tell me about parks with kids' activities",
+          "Best green areas for a family day out",
+          "Children's parks with rides in Kolkata",
+          "Any recommendations for educational parks for kids?"
+        ],
+        "responses": [
+          "Kolkata has several children's parks. Explore Nicco Park, Eco Tourism Park, and Millennium Park for family-friendly environments and a range of activities for kids."
+        ]
+      },
+      {
+        "tag": "historical_places",
+        "patterns": [
+          "I want to visit historical places in Kolkata",
+          "Best historical sites in Kolkata",
+          "Tell me about the history of Kolkata",
+          "Recommended heritage sites in Kolkata",
+          "I want to explore the cultural heritage of Kolkata",
+          "Suggest famous historical landmarks in Kolkata",
+          "What are the popular forts in Kolkata?",
+          "Tell me about colonial-era architecture in Kolkata",
+          "Historical walking tour in Kolkata",
+          "Any recommendations for historical museums?"
+        ],
+        "responses": [
+          "Kolkata boasts a rich history. Explore historical places like Victoria Memorial, Howrah Bridge, Marble Palace, Indian Museum, and Fort William to delve into the city's cultural heritage."
+        ]
+      },
+      {
+        "tag": "victoria_memorial",
+        "patterns": ["Tell me about Victoria Memorial", "What can I see at Victoria Memorial?", "Victoria Memorial details"],
+        "responses": ["Victoria Memorial is an iconic symbol of Kolkata, showcasing Indo-Saracenic architecture. Explore the museum inside, surrounded by beautiful gardens and sculptures."]
+      },
+      {
+        "tag": "howrah_bridge",
+        "patterns": ["Tell me about Howrah Bridge", "What can I see at Howrah Bridge?", "Howrah Bridge details"],
+        "responses": ["Howrah Bridge is a historic cantilever bridge over the Hooghly River. Enjoy a stroll on the bridge, and witness the breathtaking views of the river and Kolkata's skyline."]
+      },
+      {
+        "tag": "marble_palace",
+        "patterns": ["Tell me about Marble Palace in Kolkata", "What can I see at Marble Palace?", "Marble Palace details"],
+        "responses": ["Marble Palace is a magnificent mansion with a rich art collection. Visit to admire the marble architecture, sculptures, and paintings in a serene setting."]
+      },
+      {
+        "tag": "indian_museum",
+        "patterns": ["Tell me about the Indian Museum", "What can I see at the Indian Museum?", "Indian Museum details"],
+        "responses": ["The Indian Museum is one of the oldest in Asia, housing a vast collection of artifacts. Explore galleries featuring archaeology, art, and natural history."]
+      },
+      {
+        "tag": "fort_william",
+        "patterns": ["Tell me about Fort William", "What can I see at Fort William?", "Fort William details"],
+        "responses": ["Fort William is a historic fort that played a crucial role in Kolkata's colonial history. While entry is restricted, admire its architecture and learn about its significance."]
+      },
+      {
+        "tag": "colonial_architecture",
+        "patterns": [
+          "Best colonial-era architecture in Kolkata",
+          "Tell me about buildings from the British colonial period",
+          "Recommended heritage structures in Kolkata",
+          "I want to explore colonial architecture in Kolkata",
+          "Suggest famous colonial-era buildings",
+          "What are the popular British monuments in Kolkata?",
+          "Tell me about the Writers' Building",
+          "Colonial churches in Kolkata",
+          "Historic government buildings in Kolkata",
+          "Any recommendations for guided heritage walks?"
+        ],
+        "responses": [
+          "Kolkata showcases impressive colonial-era architecture. Explore Writers' Building, St. Paul's Cathedral, Raj Bhavan, and the General Post Office for a glimpse into the city's British heritage."
+        ]
+      },
+      {
+        "tag": "writers_building",
+        "patterns": ["Tell me about Writers' Building", "What can I see at Writers' Building?", "Writers' Building details"],
+        "responses": ["Writers' Building is a prominent colonial structure housing the state government offices. Admire its architectural beauty and historical significance."]
+      },
+      {
+        "tag": "churches_in_kolkata",
+        "patterns": [
+          "Best colonial churches in Kolkata",
+          "Tell me about historic churches",
+          "Recommended Christian heritage sites in Kolkata",
+          "I want to explore colonial-era churches in Kolkata",
+          "Suggest famous churches",
+          "What are the popular Christian landmarks in Kolkata?",
+          "Tell me about St. Paul's Cathedral",
+          "Historical significance of churches in Kolkata",
+          "Colonial-era cathedrals in Kolkata",
+          "Any recommendations for Christmas celebrations in Kolkata?"
+        ],
+        "responses": [
+          "Kolkata has beautiful colonial-era churches. Explore St. Paul's Cathedral, Armenian Church, and St. John's Church to experience the rich Christian heritage of the city."
+        ]
+      },
+      {
+        "tag": "historical_museums",
+        "patterns": [
+          "Best historical museums in Kolkata",
+          "Tell me about museums showcasing Kolkata's history",
+          "Recommended heritage museums",
+          "I want to explore historical artifacts in Kolkata",
+          "Suggest famous historical museums",
+          "What are the popular museums with colonial exhibits in Kolkata?",
+          "Tell me about the Kolkata Panorama",
+          "Historical artifacts in Kolkata museums",
+          "Colonial-era exhibits in Kolkata museums",
+          "Any recommendations for interactive history exhibits?"
+        ],
+        "responses": [
+          "Kolkata boasts museums with rich historical exhibits. Explore the Kolkata Panorama, Indian Museum, and Marble Palace for a comprehensive understanding of the city's history."
+        ]
+      },
+      {
+        "tag": "nightlife_places",
+        "patterns": [
+          "I want to explore nightlife places in Kolkata",
+          "Best places for nightlife in Kolkata",
+          "Tell me about the nightlife scene in Kolkata",
+          "Recommended bars and clubs in Kolkata",
+          "I want to experience the nightlife culture",
+          "Suggest famous nightclubs in Kolkata",
+          "What are the popular pubs in Kolkata?",
+          "Tell me about live music venues in Kolkata",
+          "Nightlife districts in Kolkata",
+          "Any recommendations for rooftop bars?"
+        ],
+        "responses": [
+          "Kolkata offers a vibrant nightlife. Explore Park Street, Camac Street, and Sector V for a mix of bars, nightclubs, and live music venues to enjoy the city's nightlife culture."
+        ]
+      },
+      {
+        "tag": "park_street",
+        "patterns": ["Tell me about nightlife on Park Street", "Best places to visit on Park Street at night", "Park Street nightlife details"],
+        "responses": ["Park Street is a hub for nightlife in Kolkata. Explore popular spots like Someplace Else, Roxy, and The Park Hotel for a lively and diverse nightlife experience."]
+      },
+      {
+        "tag": "camac_street",
+        "patterns": ["Tell me about nightlife on Camac Street", "Best places to visit on Camac Street at night", "Camac Street nightlife details"],
+        "responses": ["Camac Street is known for its upscale nightlife. Check out places like M Bar Kitchen, The Lords and Bar-B-Q for a mix of fine dining, bars, and entertainment."]
+      },
+      {
+        "tag": "sector_v",
+        "patterns": ["Tell me about nightlife in Sector V", "Best places to visit in Sector V at night", "Sector V nightlife details"],
+        "responses": ["Sector V is the IT hub with a growing nightlife scene. Explore The GRID, Ozora, and The GRID Iron for a mix of pubs, lounges, and vibrant nightspots."]
+      },
+      {
+        "tag": "bars_and_clubs",
+        "patterns": [
+          "Best bars and clubs in Kolkata",
+          "Tell me about popular nightclubs",
+          "Recommended pubs in Kolkata",
+          "I want to explore the bar scene in Kolkata",
+          "Suggest famous dance clubs",
+          "What are the popular sports bars in Kolkata?",
+          "Tell me about themed bars and clubs",
+          "Live music bars in Kolkata",
+          "Best places for a pub crawl",
+          "Any recommendations for jazz clubs?"
+        ],
+        "responses": [
+          "Kolkata has a diverse range of bars and clubs. Explore Someplace Else, Aqua, Tantra, and The Myx for a mix of music, dance, and vibrant nightlife."
+        ]
+      },
+      {
+        "tag": "live_music_venues",
+        "patterns": [
+          "Best live music venues in Kolkata",
+          "Tell me about places with live performances",
+          "Recommended music bars in Kolkata",
+          "I want to enjoy live music in Kolkata",
+          "Suggest famous jazz clubs",
+          "What are the popular venues for live bands?",
+          "Tell me about acoustic music bars",
+          "Music festivals in Kolkata",
+          "Best places for indie music",
+          "Any recommendations for open mic nights?"
+        ],
+        "responses": [
+          "Kolkata has a thriving live music scene. Explore Someplace Else, Blue Monk, and Roxy for live performances, jazz, and indie music. Check out music festivals and open mic nights for a diverse experience."
+        ]
+      },
+      {
+        "tag": "nightlife_districts",
+        "patterns": [
+          "Nightlife districts in Kolkata",
+          "Tell me about areas with vibrant nightlife",
+          "Recommended nightlife hubs",
+          "I want to explore different nightlife districts",
+          "Suggest famous party streets",
+          "What are the popular hangout zones at night?",
+          "Tell me about late-night eateries",
+          "Best places for a night stroll in Kolkata",
+          "Night markets in Kolkata",
+          "Any recommendations for after-hours entertainment?"
+        ],
+        "responses": [
+          "Explore Park Street, Camac Street, and Salt Lake City for vibrant nightlife districts. These areas feature a mix of bars, clubs, eateries, and entertainment options for a memorable night out."
+        ]
+      },
+      {
+        "tag": "rooftop_bars",
+        "patterns": [
+          "Best rooftop bars in Kolkata",
+          "Tell me about rooftop lounges",
+          "Recommended bars with a view",
+          "I want to enjoy drinks with a view in Kolkata",
+          "Suggest famous rooftop restaurants",
+          "What are the popular sky bars in Kolkata?",
+          "Tell me about rooftop events",
+          "Scenic rooftop bars in Kolkata",
+          "Best places for a romantic evening with a view",
+          "Any recommendations for rooftop parties?"
+        ],
+        "responses": [
+          "Experience Kolkata's skyline at rooftop bars. Check out Smoke Shack, The Skyline, and The Pallet for scenic views, delicious cocktails, and a memorable evening."
+        ]
+      },
+      {
+        "tag": "tourist_spots",
+        "patterns": ["Tell me about tourist spots", "What are the famous places in Kolkata?", "Tourist attractions"],
+        "responses": ["Kolkata has many famous tourist spots like Victoria Memorial, Indian Museum, Marble Palace, Belur Math, and more."]
+      },
+      {
+        "tag": "art_and_music_places",
+        "patterns": [
+          "I want to explore art and music places in Kolkata",
+          "Best places for art and music in Kolkata",
+          "Tell me about the art and music scene in Kolkata",
+          "Recommended art galleries in Kolkata",
+          "I want to experience the local art scene",
+          "Suggest famous music venues in Kolkata",
+          "What are the popular art exhibitions in Kolkata?",
+          "Tell me about live performances in Kolkata",
+          "Art districts in Kolkata",
+          "Any recommendations for music festivals?"
+        ],
+        "responses": [
+          "Kolkata has a vibrant art and music scene. Explore areas like Rabindra Sadan, Nandan, and galleries like Academy of Fine Arts for a rich cultural experience."
+        ]
+      },
+      {
+        "tag": "rabindra_sadan",
+        "patterns": ["Tell me about Rabindra Sadan", "What can I see at Rabindra Sadan?", "Rabindra Sadan details"],
+        "responses": ["Rabindra Sadan is a cultural hub hosting art exhibitions, music performances, and theater shows. It's a must-visit for those interested in the cultural heritage of Kolkata."]
+      },
+      {
+        "tag": "nandan",
+        "patterns": ["Tell me about Nandan", "What can I see at Nandan?", "Nandan details"],
+        "responses": ["Nandan is a center for film and cultural activities. Explore film screenings, art exhibitions, and cultural events, making it a hub for art enthusiasts in Kolkata."]
+      },
+      {
+        "tag": "academy_of_fine_arts",
+        "patterns": ["Tell me about the Academy of Fine Arts", "What can I see at the Academy of Fine Arts?", "Academy of Fine Arts details"],
+        "responses": ["The Academy of Fine Arts is a prestigious institution hosting art exhibitions, performances, and cultural events. It plays a significant role in promoting the arts in Kolkata."]
+      },
+      {
+        "tag": "music_venues",
+        "patterns": [
+          "Best music venues in Kolkata",
+          "Tell me about popular live music places",
+          "Recommended concert halls in Kolkata",
+          "I want to explore the live music scene in Kolkata",
+          "Suggest famous music clubs",
+          "What are the popular jazz bars in Kolkata?",
+          "Tell me about classical music venues",
+          "Live performances in Kolkata",
+          "Best places for indie music",
+          "Any recommendations for open mic nights?"
+        ],
+        "responses": [
+          "Kolkata offers diverse music venues. Explore Someplace Else, The Basement, and Swabhumi for live performances, jazz, classical music, and indie gigs. Check out open mic nights for a variety of talent."
+        ]
+      },
+      {
+        "tag": "art_exhibitions",
+        "patterns": [
+          "Best art exhibitions in Kolkata",
+          "Tell me about galleries with art displays",
+          "Recommended art spaces in Kolkata",
+          "I want to explore visual arts in Kolkata",
+          "Suggest famous art museums",
+          "What are the popular contemporary art galleries in Kolkata?",
+          "Tell me about public art installations",
+          "Upcoming art events in Kolkata",
+          "Best places for photography exhibitions",
+          "Any recommendations for interactive art experiences?"
+        ],
+        "responses": [
+          "Kolkata hosts numerous art exhibitions. Explore galleries like Aakriti Art Gallery, Birla Academy of Art and Culture, and Kolkata Centre for Creativity for a diverse range of visual arts experiences."
+        ]
+      },
+      {
+        "tag": "art_districts",
+        "patterns": [
+          "Art districts in Kolkata",
+          "Tell me about areas with vibrant art scenes",
+          "Recommended neighborhoods for art enthusiasts",
+          "I want to explore different art districts",
+          "Suggest famous art streets",
+          "What are the popular hubs for local artists?",
+          "Tell me about street art in Kolkata",
+          "Best places for a creative stroll in Kolkata",
+          "Art markets in Kolkata",
+          "Any recommendations for art workshops?"
+        ],
+        "responses": [
+          "Explore art districts like Ballygunge, Shyambazar, and Kalighat for vibrant art scenes. These areas feature art galleries, studios, and street art, providing a creative atmosphere in Kolkata."
+        ]
+      },
+      {
+        "tag": "music_festivals",
+        "patterns": [
+          "Best music festivals in Kolkata",
+          "Tell me about upcoming music events",
+          "Recommended festivals for music lovers",
+          "I want to attend a music festival in Kolkata",
+          "Suggest famous cultural festivals",
+          "What are the popular indie music festivals in Kolkata?",
+          "Tell me about classical music festivals",
+          "Music and arts festivals in Kolkata",
+          "Best places for a musical celebration",
+          "Any recommendations for international music events?"
+        ],
+        "responses": [
+          "Kolkata hosts exciting music festivals. Check out Kolkata Jazz Festival, Dover Lane Music Conference, and Swara Samrat Festival for a celebration of diverse music genres and cultural richness."
+        ]
+      },
+      {
+        "tag": "cuisine_places",
+        "patterns": [
+          "I want to explore cuisine places in Kolkata",
+          "Best places to eat in Kolkata",
+          "Tell me about the food scene in Kolkata",
+          "Recommended restaurants in Kolkata",
+          "I want to experience the local cuisine",
+          "Suggest famous street food stalls in Kolkata",
+          "What are the popular fine dining restaurants?",
+          "Tell me about traditional Bengali cuisine",
+          "Vegetarian restaurants in Kolkata",
+          "Any recommendations for dessert places?"
+        ],
+        "responses": [
+          "Kolkata is a paradise for food lovers. Explore areas like Park Street, Dacre Street, and College Street for a variety of culinary experiences, from street food to fine dining."
+        ]
+      },
+      {
+        "tag": "park_street_eateries",
+        "patterns": ["Best eateries on Park Street", "Tell me about popular food places on Park Street", "Park Street food details"],
+        "responses": ["Park Street offers a diverse range of eateries. Explore Flurys, Peter Cat, and Mocambo for a mix of continental, Indian, and international cuisines."]
+      },
+      {
+        "tag": "dacre_street",
+        "patterns": ["Tell me about food options on Dacre Street", "Best places to eat on Dacre Street", "Dacre Street food details"],
+        "responses": ["Dacre Street is known for its street food. Try out Indian Coffee House, Nahoum and Sons, and Paramount for delicious snacks and local treats."]
+      },
+      {
+        "tag": "college_street",
+        "patterns": ["Best food options on College Street", "Tell me about popular eateries on College Street", "College Street food details"],
+        "responses": ["College Street is famous for its bookstores and eateries. Explore Indian Coffee House, Paramount, and Putiram for a taste of Kolkata's street food and sweet delights."]
+      },
+      {
+        "tag": "street_food_stalls",
+        "patterns": [
+          "Best street food stalls in Kolkata",
+          "Tell me about popular street food places",
+          "Recommended street food vendors",
+          "I want to explore local street food",
+          "Suggest famous chaat stalls",
+          "What are the popular kathi roll stalls in Kolkata?",
+          "Tell me about phuchka places",
+          "Street-side kebab joints",
+          "Best places for egg rolls",
+          "Any recommendations for evening snacks?"
+        ],
+        "responses": [
+          "Kolkata is renowned for its street food. Try phuchka at Vivekananda Park, kathi rolls at Kusum Rolls, and kebabs at Nizam's. Don't miss the chaat stalls on Park Street for a delightful culinary experience."
+        ]
+      },
+      {
+        "tag": "fine_dining_restaurants",
+        "patterns": [
+          "Best fine dining restaurants in Kolkata",
+          "Tell me about upscale dining options",
+          "Recommended restaurants for a fancy meal",
+          "I want to experience gourmet cuisine",
+          "Suggest famous seafood restaurants",
+          "What are the popular multi-cuisine fine dining places?",
+          "Tell me about rooftop restaurants",
+          "Fine dining with a view",
+          "Best places for a romantic dinner",
+          "Any recommendations for themed restaurants?"
+        ],
+        "responses": [
+          "Kolkata offers exquisite fine dining options. Explore Oh! Calcutta, 6 Ballygunge Place, and The Skyline for upscale dining experiences with a variety of cuisines and scenic views."
+        ]
+      },
+      {
+        "tag": "traditional_bengali_cuisine",
+        "patterns": [
+          "Best places for traditional Bengali cuisine",
+          "Tell me about restaurants serving Bengali food",
+          "Recommended places for authentic Bengali meals",
+          "I want to try local Bengali dishes",
+          "Suggest famous sweets shops",
+          "What are the popular fish curry places in Kolkata?",
+          "Tell me about traditional Bengali thali",
+          "Local Bengali snacks",
+          "Best places for mishti doi",
+          "Any recommendations for cultural dining experiences?"
+        ],
+        "responses": [
+          "Experience the richness of Bengali cuisine in Kolkata. Try Aaheli, Kewpie's Kitchen, and Bhojohori Manna for traditional Bengali dishes, sweets, and cultural dining experiences."
+        ]
+      },
+      {
+        "tag": "vegetarian_restaurants",
+        "patterns": [
+          "Best vegetarian restaurants in Kolkata",
+          "Tell me about popular veggie-friendly places",
+          "Recommended vegetarian eateries",
+          "I want to explore vegetarian Bengali cuisine",
+          "Suggest famous vegetarian thali places",
+          "What are the popular vegan options in Kolkata?",
+          "Tell me about vegetarian street food",
+          "Best places for vegetarian buffets",
+          "Vegetarian cafes in Kolkata",
+          "Any recommendations for gluten-free options?"
+        ],
+        "responses": [
+          "Kolkata has excellent vegetarian options. Explore Suruchi, Sree Hari Mistanna Bhandar, and Kasturi for delicious vegetarian Bengali cuisine, street food, and buffets."
+        ]
+      },
+      {
+        "tag": "dessert_places",
+        "patterns": [
+          "Best dessert places in Kolkata",
+          "Tell me about popular sweet shops",
+          "Recommended dessert cafes",
+          "I want to try local sweets",
+          "Suggest famous rosogolla shops",
+          "What are the popular places for sandesh?",
+          "Tell me about unique dessert experiences",
+          "Best places for mishti doi",
+          "Dessert buffets in Kolkata",
+          "Any recommendations for sugar-free desserts?"
+        ],
+        "responses": [
+          "Indulge in Kolkata's sweet delights. Try KC Das, Balaram Mullick & Radharaman Mullick, and Girish Chandra Dey & Nakur Chandra Nandy for a delightful array of sweets, desserts, and unique sweet experiences."
+        ]
+      },
+      {
+        "tag": "river_cruises",
+        "patterns": [
+          "I want to explore river cruises in Kolkata",
+          "Best places for river cruises",
+          "Tell me about boat rides in Kolkata",
+          "Recommended river cruise operators",
+          "I want to experience the Hooghly River",
+          "Suggest famous boat tour routes",
+          "What are the popular sunset cruises in Kolkata?",
+          "Tell me about heritage river cruises",
+          "Boat rides near Howrah Bridge",
+          "Any recommendations for private boat tours?"
+        ],
+        "responses": [
+          "Kolkata offers enchanting river cruise experiences on the Hooghly River. Explore options like Millennium Park, Princep Ghat, and Babughat for boat rides, sunset cruises, and heritage tours."
+        ]
+      },
+      {
+        "tag": "millennium_park",
+        "patterns": ["Tell me about river cruises at Millennium Park", "Best boat rides at Millennium Park", "Millennium Park cruise details"],
+        "responses": ["Millennium Park is a popular spot for river cruises. Enjoy boat rides offering panoramic views of the city, including Howrah Bridge and the Kolkata skyline."]
+      },
+      {
+        "tag": "princep_ghat",
+        "patterns": ["Tell me about river cruises at Princep Ghat", "Best boat rides at Princep Ghat", "Princep Ghat cruise details"],
+        "responses": ["Princep Ghat is known for its serene boat rides on the Hooghly River. Experience the beauty of Kolkata's historical landmarks during sunset or take a heritage cruise along the river."]
+      },
+      {
+        "tag": "babughat",
+        "patterns": ["Tell me about river cruises at Babughat", "Best boat rides at Babughat", "Babughat cruise details"],
+        "responses": ["Babughat offers delightful boat rides with a view of iconic structures like Howrah Bridge. Explore the Ganges and enjoy a peaceful cruise along the ghats."]
+      },
+      {
+        "tag": "boat_tour_routes",
+        "patterns": [
+          "Best boat tour routes in Kolkata",
+          "Tell me about popular boat ride paths",
+          "Recommended river cruise routes",
+          "I want to explore different boat tour options",
+          "Suggest famous routes for boat tours",
+          "What are the popular historical boat tours in Kolkata?",
+          "Tell me about themed river cruises",
+          "Boat rides to botanical gardens",
+          "Best routes for a scenic boat tour",
+          "Any recommendations for boat tours with commentary?"
+        ],
+        "responses": [
+          "Discover Kolkata through various boat tour routes. From historical tours to themed cruises, explore the Hooghly River with routes covering landmarks, gardens, and scenic beauty."
+        ]
+      },
+      {
+        "tag": "sunset_cruises",
+        "patterns": [
+          "Best sunset cruises in Kolkata",
+          "Tell me about romantic boat rides at sunset",
+          "Recommended evening river cruises",
+          "I want to experience a sunset boat tour",
+          "Suggest famous spots for sunset cruises",
+          "What are the popular evening boat rides in Kolkata?",
+          "Tell me about twilight river cruises",
+          "Scenic views during sunset cruises",
+          "Best places for a romantic boat trip",
+          "Any recommendations for private sunset cruises?"
+        ],
+        "responses": [
+          "Experience the magic of Kolkata's sunset with romantic river cruises. Enjoy breathtaking views of the city's skyline and landmarks on boat rides from places like Princep Ghat and Millennium Park."
+        ]
+      },
+      {
+        "tag": "heritage_river_cruises",
+        "patterns": [
+          "Best heritage river cruises in Kolkata",
+          "Tell me about boat tours with historical insights",
+          "Recommended heritage boat rides",
+          "I want to explore the cultural heritage by boat",
+          "Suggest famous heritage river cruise operators",
+          "What are the popular historical boat tours in Kolkata?",
+          "Tell me about themed heritage cruises",
+          "Historical landmarks during river cruises",
+          "Best routes for a heritage boat tour",
+          "Any recommendations for guided heritage boat tours?"
+        ],
+        "responses": [
+          "Discover Kolkata's rich heritage with themed river cruises. Explore the Ganges while learning about historical landmarks, cultural insights, and the fascinating stories that define the city."
+        ]
+      },
+      {
+        "tag": "howrah_bridge_cruises",
+        "patterns": ["Tell me about river cruises near Howrah Bridge", "Best boat rides with Howrah Bridge views", "Howrah Bridge cruise details"],
+        "responses": ["Embark on river cruises near Howrah Bridge for a unique perspective of this iconic structure. Experience the charm of the Ganges with boat rides offering stunning views."]
+      },
+      {
+        "tag": "private_boat_tours",
+        "patterns": [
+          "Best private boat tours in Kolkata",
+          "Tell me about personalized boat rides",
+          "Recommended private river cruise operators",
+          "I want to book a private boat for a tour",
+          "Suggest famous companies for private boat tours",
+          "What are the popular luxury boat experiences in Kolkata?",
+          "Tell me about customizable river cruises",
+          "Private boat rentals in Kolkata",
+          "Best options for a VIP boat tour",
+          "Any recommendations for intimate boat rides?"
+        ],
+        "responses": [
+          "Indulge in luxury with private boat tours in Kolkata. Experience personalized cruises, intimate settings, and VIP services with operators offering private boat rentals on the Hooghly River."
+        ]
+      },
+      {
+        "tag": "festivals_in_kolkata",
+        "patterns": [
+          "I want to explore festivals in Kolkata",
+          "Tell me about cultural events in Kolkata",
+          "Recommended festivals to attend",
+          "I want to experience the local celebrations",
+          "Suggest famous festivals in Kolkata",
+          "What are the popular religious festivals in Kolkata?",
+          "Tell me about traditional events",
+          "Cultural festivals in Kolkata",
+          "Best time to visit during festivals",
+          "Any recommendations for unique cultural experiences?"
+        ],
+        "responses": [
+          "Kolkata is known for its vibrant festivals and cultural celebrations. Experience the grandeur of Durga Puja, the colors of Holi, and the joy of Diwali, among other traditional and religious events."
+        ]
+      },
+      {
+        "tag": "durga_puja",
+        "patterns": ["Tell me about Durga Puja in Kolkata", "Best time to visit during Durga Puja", "Durga Puja celebration details"],
+        "responses": ["Durga Puja is the grandest festival in Kolkata. Experience the city's cultural fervor with elaborate decorations, artistic idols, and a festive atmosphere during this time."]
+      },
+      {
+        "tag": "holi_celebrations",
+        "patterns": ["Tell me about Holi celebrations in Kolkata", "Best places for Holi events", "Holi festival details"],
+        "responses": ["Holi is celebrated with enthusiasm in Kolkata. Join the colorful festivities at popular locations like Shantiniketan, local neighborhoods, and organized events for a joyous experience."]
+      },
+      {
+        "tag": "diwali_in_kolkata",
+        "patterns": ["Tell me about Diwali celebrations in Kolkata", "Best time to visit during Diwali", "Diwali festival details"],
+        "responses": ["Diwali is celebrated with lights and joy in Kolkata. Explore places like Park Street, Dakshineswar, and community events to witness the city adorned with lamps, fireworks, and cultural performances."]
+      },
+      {
+        "tag": "religious_festivals",
+        "patterns": [
+          "Best religious festivals in Kolkata",
+          "Tell me about traditional religious events",
+          "Recommended festivals with religious significance",
+          "I want to explore the spirituality of Kolkata",
+          "Suggest famous temple festivals",
+          "What are the popular mosque events in Kolkata?",
+          "Tell me about church festivals",
+          "Religious processions in Kolkata",
+          "Best time to visit religious sites during festivals",
+          "Any recommendations for cultural fairs?"
+        ],
+        "responses": [
+          "Kolkata hosts various religious festivals, embracing diversity. Explore events at Kalighat Temple, Nakhoda Masjid, St. Paul's Cathedral, and other religious sites, celebrating the city's rich cultural tapestry."
+        ]
+      },
+      {
+        "tag": "traditional_events",
+        "patterns": [
+          "Best traditional events in Kolkata",
+          "Tell me about cultural festivals with traditional elements",
+          "Recommended events showcasing local customs",
+          "I want to experience traditional art forms",
+          "Suggest famous folk festivals",
+          "What are the popular traditional dance events in Kolkata?",
+          "Tell me about cultural parades",
+          "Traditional crafts fairs",
+          "Best time to witness traditional celebrations",
+          "Any recommendations for heritage events?"
+        ],
+        "responses": [
+          "Immerse yourself in Kolkata's traditional events, featuring folk music, dance, crafts, and local customs. Explore events like Poush Mela, Baul Fakir Utsav, and Kolkata Carnival for a glimpse into the city's rich heritage."
+        ]
+      },
+      {
+        "tag": "cultural_festivals",
+        "patterns": [
+          "Best cultural festivals in Kolkata",
+          "Tell me about events promoting arts and culture",
+          "Recommended cultural gatherings",
+          "I want to attend literary festivals",
+          "Suggest famous cultural celebrations",
+          "What are the popular film festivals in Kolkata?",
+          "Tell me about art and music festivals",
+          "Cultural exchange events",
+          "Best time for literature enthusiasts",
+          "Any recommendations for interactive cultural experiences?"
+        ],
+        "responses": [
+          "Kolkata hosts diverse cultural festivals throughout the year. Explore events like Kolkata Literary Meet, Kolkata International Film Festival, and various art and music festivals for a stimulating cultural experience."
+        ]
+      },
+      {
+        "tag": "best_time_to_visit_festivals",
+        "patterns": [
+          "Best time to visit Kolkata for festivals",
+          "Tell me about the festival calendar",
+          "Recommended months for cultural events",
+          "I want to plan my visit during festive seasons",
+          "Suggest famous events happening throughout the year",
+          "What are the popular winter festivals in Kolkata?",
+          "Tell me about summer cultural events",
+          "Festivals during monsoon season",
+          "Best time for traditional celebrations",
+          "Any recommendations for season-specific festivals?"
+        ],
+        "responses": [
+          "Kolkata celebrates festivals throughout the year, with Durga Puja in autumn, Diwali in winter, and various cultural events in different seasons. Plan your visit based on the vibrant festival calendar."
+        ]
+      },
+      {
+        "tag": "unique_cultural_experiences",
+        "patterns": [
+          "Best unique cultural experiences in Kolkata",
+          "Tell me about offbeat festivals",
+          "Recommended events for unique cultural insights",
+          "I want to explore hidden gems of Kolkata's culture",
+          "Suggest famous cultural workshops",
+          "What are the popular lesser-known festivals in Kolkata?",
+          "Tell me about alternative cultural gatherings",
+          "Cultural events off the beaten path",
+          "Best time for unconventional celebrations",
+          "Any recommendations for immersive cultural experiences?"
+        ],
+        "responses": [
+          "Discover Kolkata's unique cultural experiences, from niche festivals and workshops to hidden gems that provide unconventional insights into the city's vibrant and diverse cultural landscape."
+        ]
+      },
+      {
+        "tag": "transportation_in_kolkata",
+        "patterns": [
+          "I want to know about transportation in Kolkata",
+          "Tell me about public transport",
+          "Recommended modes of transportation",
+          "I want to explore the city's commute options",
+          "Suggest famous transportation services",
+          "What are the popular ways to get around in Kolkata?",
+          "Tell me about local cabs and rickshaws",
+          "Public transport options in Kolkata",
+          "Best way to travel between attractions",
+          "Any recommendations for affordable transportation?"
+        ],
+        "responses": [
+          "Kolkata offers diverse transportation options. Explore public buses, the metro, trams, and traditional modes like rickshaws and cabs for a convenient and affordable way to get around the city."
+        ]
+      },
+      {
+        "tag": "public_transport",
+        "patterns": [
+          "Tell me about public transport in Kolkata",
+          "What are the options for public buses?",
+          "Metro services in Kolkata",
+          "Tram routes in the city",
+          "Tell me about the local transportation system",
+          "Public transport cards and passes",
+          "How to use the metro in Kolkata",
+          "Bus routes to popular attractions",
+          "Tram stations in Kolkata",
+          "Any recommendations for eco-friendly commuting?"
+        ],
+        "responses": [
+          "Kolkata's public transport includes buses, the metro, and trams. You can use smart cards for seamless travel. Explore well-connected routes to reach popular attractions and consider eco-friendly commuting options."
+        ]
+      },
+      {
+        "tag": "modes_of_transportation",
+        "patterns": [
+          "Tell me about different modes of transportation in Kolkata",
+          "Recommended ways to get around the city",
+          "I want to explore various commute options",
+          "Suggest famous transportation services",
+          "What are the popular modes of travel in Kolkata?",
+          "Tell me about traditional modes of transportation",
+          "Modern transportation options",
+          "Eco-friendly commute choices",
+          "Best way to travel for sightseeing",
+          "Any recommendations for efficient transportation?"
+        ],
+        "responses": [
+          "Kolkata offers a mix of traditional and modern transportation. Explore the city using public buses, the metro, trams, taxis, and rickshaws. Consider eco-friendly options for an efficient and enjoyable commute."
+        ]
+      },
+      {
+        "tag": "local_cabs_and_rickshaws",
+        "patterns": [
+          "Tell me about local cabs in Kolkata",
+          "What are the popular taxi services?",
+          "Auto-rickshaws in the city",
+          "Tell me about traditional rickshaws",
+          "Suggest famous cab companies",
+          "How to hire a taxi in Kolkata",
+          "Rickshaw rates in the city",
+          "Best areas for rickshaw rides",
+          "Local cab stands",
+          "Any recommendations for shared transportation?"
+        ],
+        "responses": [
+          "Explore Kolkata using local cabs and rickshaws. Choose from popular taxi services and auto-rickshaws for a convenient and budget-friendly way to travel within the city. Shared transportation options are also available."
+        ]
+      },
+      {
+        "tag": "affordable_transportation",
+        "patterns": [
+          "Tell me about affordable transportation in Kolkata",
+          "Budget-friendly commuting options",
+          "Recommended modes for economical travel",
+          "I want to explore the city on a budget",
+          "Suggest famous low-cost transportation services",
+          "Affordable public transport",
+          "Economical cab services",
+          "Budget travel tips in Kolkata",
+          "Best ways to save on transportation costs",
+          "Any recommendations for discounts or offers?"
+        ],
+        "responses": [
+          "Explore Kolkata on a budget with affordable transportation options. Use public buses, the metro, and economical cab services to travel around the city. Look out for discounts or offers to save on transportation costs."
+        ]
+      },
+      {
+        "tag": "eco_friendly_commute",
+        "patterns": [
+          "Tell me about eco-friendly commuting in Kolkata",
+          "Green transportation options",
+          "Recommended modes for sustainable travel",
+          "I want to explore the city in an eco-friendly way",
+          "Suggest famous environmentally friendly transportation services",
+          "Eco-conscious public transport",
+          "Bicycle rental services",
+          "Walking routes in Kolkata",
+          "Best areas for eco-friendly commuting",
+          "Any recommendations for electric vehicle services?"
+        ],
+        "responses": [
+          "Embrace eco-friendly commuting in Kolkata. Explore green transportation options, consider bicycle rentals, walk along scenic routes, and look for electric vehicle services to contribute to a sustainable travel experience."
+        ]
+      },
+      {
+        "tag": "efficient_transportation",
+        "patterns": [
+          "Tell me about efficient transportation in Kolkata",
+          "Fast and reliable commuting options",
+          "Recommended modes for time-saving travel",
+          "I want to explore the city efficiently",
+          "Suggest famous efficient transportation services",
+          "Time-saving public transport",
+          "Express routes in Kolkata",
+          "Best ways to avoid traffic",
+          "Efficient cab services",
+          "Any recommendations for quick and convenient travel?"
+        ],
+        "responses": [
+          "Save time and explore Kolkata efficiently with fast and reliable transportation options. Use time-saving public transport, consider express routes, and opt for efficient cab services for quick and convenient travel."
+        ]
+      },
+      {
+        "tag": "best_time_to_travel",
+        "patterns": [
+          "Best time for transportation in Kolkata",
+          "Tell me about the most convenient travel hours",
+          "Recommended timings for commuting",
+          "I want to plan my travel during less crowded times",
+          "Suggest famous off-peak hours for travel",
+          "Low-traffic public transport timings",
+          "Avoiding rush hours in Kolkata",
+          "Best times for cab rides",
+          "Traveling during non-peak hours",
+          "Any recommendations for planning travel routes efficiently?"
+        ],
+        "responses": [
+          "Plan your travel efficiently in Kolkata by choosing the best times for transportation. Consider non-peak hours for public transport and cab rides to avoid crowds and ensure a smooth and comfortable commute."
+        ]
+      },
+      {
+        "tag": "default",
+        "patterns": [],
+        "responses": ["I'm sorry, I didn't understand that. Feel free to ask about tourist places in Kolkata."]
+      },    {
+        "tag": "budget_travel",
+        "patterns": [
+          "I want to travel in Kolkata with a budget of 500",
+          "Looking for affordable travel options in Kolkata",
+          "What are some budget-friendly travel choices in Kolkata?"
+        ],
+        "responses": [
+          "You can explore local attractions like Victoria Memorial, Howrah Bridge, and Indian Museum within a budget.",
+          "Consider taking a tram ride around the city or visiting local markets like New Market for budget-friendly experiences.",
+          "Take a heritage walk around North Kolkata to explore historical sites without spending much."
+        ]
+      },
+      {
+        "tag": "kolkata_explore",
+        "patterns": [
+          "What are some must-visit places in Kolkata?",
+          "Suggest some tourist spots in Kolkata.",
+          "Looking for famous sites to visit in Kolkata."
+        ],
+        "responses": [
+          "Some popular places to visit in Kolkata are Victoria Memorial, Howrah Bridge, Belur Math, and Science City.",
+          "Consider exploring the Maidan, Dakshineswar Kali Temple, Marble Palace, and Princep Ghat for unique experiences in Kolkata.",
+          "Visit places like Eco Park, St. Paul's Cathedral, Birla Planetarium, and Kalighat Temple for a diverse cultural experience in Kolkata."
+        ]
+      },
+      {
+        "tag": "budget_hotels",
+        "patterns": [
+          "Need budget-friendly hotels in Kolkata.",
+          "Looking for affordable accommodation in Kolkata.",
+          "Any suggestions for cheap hotels in Kolkata?"
+        ],
+        "responses": [
+          "You can consider staying at budget hotels like Hotel Himalaya, Hotel Crestwood, or Hotel Camac Plaza for affordable accommodation in Kolkata.",
+          "Explore options like Hotel Lee International, Hotel Diplomat, or Hotel Trimoorti for reasonably priced stays in Kolkata.",
+          "Budget-friendly hotels such as Hotel Dee Empresa, Hotel Victerrace International, or Hotel Royal Garden can be good choices for your stay in Kolkata."
+        ]
+      },
+      {
+        "tag": "budget_hotels_kolkata",
+        "patterns": [
+          "Looking for budget hotels in Kolkata",
+          "Affordable hotels in Kolkata",
+          "Need to find cheap hotels in Kolkata"
+        ],
+        "responses": [
+          "In Kolkata, you can consider staying at Hotel Diamond Suites, Hotel Best Inn, or Hotel Heaven for affordable accommodation.",
+          "Explore options like Hotel Niharika, Hotel Eastern Plaza, or Hotel Executive Tower for budget-friendly stays in Kolkata.",
+          "Budget hotels such as Hotel Victoria, Hotel Palace Heights, or Hotel Starboard can be good choices for a minimal budget stay in Kolkata."
+        ]
+      },
+      {
+        "tag": "average_budget_hotels_kolkata",
+        "patterns": [
+          "Recommendations for average-budget hotels in Kolkata",
+          "Looking for mid-range hotels in Kolkata",
+          "Need suggestions for moderately priced hotels in Kolkata"
+        ],
+        "responses": [
+          "Consider staying at Hotel Sudesh Tower, Hotel Aauris, or The Peerless Inn for a comfortable stay within an average budget in Kolkata.",
+          "Explore options like Hotel Lindsay, Lytton Hotel, or Hotel Victerrace International for mid-range stays in Kolkata.",
+          "For a reasonably priced stay in Kolkata, check out hotels such as Hotel Park Prime, The Senator Hotel, or The Pearl Hotel."
+        ]
+      },
+      {
+        "tag": "luxury_hotels_kolkata",
+        "patterns": [
+          "Recommendations for luxury hotels in Kolkata",
+          "Looking for high-end hotels in Kolkata",
+          "Need suggestions for premium hotels in Kolkata"
+        ],
+        "responses": [
+          "For a luxurious stay in Kolkata, consider options like The Oberoi Grand, Taj Bengal, or ITC Sonar.",
+          "Explore high-end hotels such as JW Marriott Hotel Kolkata, Hyatt Regency Kolkata, or The Westin Kolkata Rajarhat for a premium experience in Kolkata.",
+          "Luxury hotels like The Lalit Great Eastern Kolkata, Swissotel Kolkata, or ITC Royal Bengal offer top-notch amenities and services for a lavish stay in Kolkata."
+        ]
+      },
+      {
+        "tag": "luxury_food_kolkata",
+        "patterns": [
+          "Recommendations for luxury dining in Kolkata",
+          "Looking for high-end restaurants in Kolkata",
+          "Need suggestions for premium dining experiences in Kolkata"
+        ],
+        "responses": [
+          "For a luxurious dining experience in Kolkata, consider places like Oh! Calcutta, 6 Ballygunge Place, or The Park Pavilion.",
+          "Explore high-end restaurants such as ITC Sonar's Peshawri, JW Marriott's Vintage Asia, or The Oberoi Grand's Baan Thai for premium dining in Kolkata.",
+          "Luxury dining destinations like Taj Bengal's Souk, Hyatt Regency's Waterside Cafe, or The Westin's Seasonal Tastes offer exquisite cuisine and ambiance for a lavish meal in Kolkata."
+        ]
+      },
+      {
+        "tag": "budget_food_kolkata",
+        "patterns": [
+          "Recommendations for affordable but tasty food in Kolkata",
+          "Looking for low-budget restaurants in Kolkata",
+          "Need suggestions for good yet inexpensive eateries in Kolkata"
+        ],
+        "responses": [
+          "For delicious yet affordable food in Kolkata, try eateries like Nizam's Kathi Rolls, Mitra Cafe, or Balaram Mullick & Radharaman Mullick.",
+          "Explore local favorites such as Apanjan Restaurant, Arsalan, or Terreti Bazaar for tasty meals at reasonable prices in Kolkata.",
+          "Places like Kasturi Restaurant, Bhojohori Manna, or Tiretti Bazaar will offer you great taste at pocket-friendly prices in Kolkata."
+        ]
+      },
+      {
+        "tag": "average_budget_food_kolkata",
+        "patterns": [
+          "Recommendations for good-tasting food places in Kolkata within an average budget",
+          "Looking for affordable yet delicious restaurants in Kolkata",
+          "Need suggestions for moderately priced restaurants with great taste in Kolkata"
+        ],
+        "responses": [
+          "Explore restaurants like 6 Ballygunge Place, Barbeque Nation, or Peter Cat for delicious meals within an average budget in Kolkata.",
+          "Consider trying Oh! Calcutta, Mocambo, or Aminia for great taste without breaking the bank in Kolkata.",
+          "For moderately priced yet flavorful meals in Kolkata, visit Tero Parbon, Kasturi Restaurant, or Bhojohori Manna."
+        ]
+      },
+      {
+        "tag": "kolkata_attractions",
+        "patterns": [
+          "What are the most visited places in Kolkata?",
+          "Suggest popular attractions in Kolkata.",
+          "Need information about famous sites in Kolkata."
+        ],
+        "responses": [
+          "Some of the most visited places in Kolkata are Victoria Memorial, Howrah Bridge, Dakshineswar Kali Temple, and Science City.",
+          "Explore popular attractions like Belur Math, Indian Museum, Marble Palace, and Park Street for unique experiences in Kolkata.",
+          "Visit places such as Kalighat Temple, Birla Planetarium, Eco Park, and Princep Ghat for a diverse cultural and scenic experience in Kolkata."
+        ]
+      },
+      {
+        "tag": "kolkata_food",
+        "patterns": [
+          "Recommendations for food in Kolkata",
+          "Where to eat in Kolkata",
+          "Suggest local cuisine in Kolkata"
+        ],
+        "responses": [
+          "Kolkata is known for its delicious street food. Try local delights like Kathi Rolls, Puchkas, Ghugni, and Jhal Muri from street vendors.",
+          "For a traditional Bengali meal, visit restaurants like 6 Ballygunge Place, Oh! Calcutta, or Bhojohori Manna.",
+          "Explore Park Street for a range of eateries offering various cuisines including Chinese, Mughlai, and Continental options in Kolkata."
+        ]
+      },
+      {
+        "tag": "budget_stay_kolkata",
+        "patterns": [
+          "Affordable staying options in Kolkata",
+          "Looking for budget hotels in Kolkata",
+          "Need suggestions for cheap accommodation in Kolkata"
+        ],
+        "responses": [
+          "Consider staying at budget hotels like Hotel Diamond Suites, Hotel Best Inn, or Hotel Heaven for affordable accommodation in Kolkata.",
+          "Explore options like Hotel Niharika, Hotel Eastern Plaza, or Hotel Executive Tower for budget-friendly stays in Kolkata.",
+          "Budget hotels such as Hotel Victoria, Hotel Palace Heights, or Hotel Starboard can be good choices for a minimal budget stay in Kolkata."
+        ]
+      },
+      {
+        "tag": "best_time_to_visit_kolkata",
+        "patterns": [
+          "When is the best time to visit Kolkata?",
+          "What is the ideal season to travel to Kolkata?",
+          "When should I plan my trip to Kolkata?"
+        ],
+        "responses": [
+          "The best time to visit Kolkata is during the winter season, from October to March, when the weather is pleasant and suitable for exploring the city.",
+          "Consider planning your trip to Kolkata between October and March as the weather is relatively cooler and conducive to sightseeing and outdoor activities.",
+          "Optimal months to visit Kolkata are from October to March, offering a comfortable climate for enjoying the city's attractions and cultural experiences."
+        ]
+      },
+      {
+        "tag": "best_time_kolkata",
+        "patterns": [
+          "Why visit Kolkata in October?",
+          "Is October a good time to travel to Kolkata?",
+          "What makes October special for visiting Kolkata?"
+        ],
+        "responses": [
+          "October is a fantastic time to visit Kolkata due to the pleasant weather and festive celebrations during Durga Puja.",
+          "During October, Kolkata experiences cooler temperatures and vibrant cultural festivities, especially the grandeur of Durga Puja celebrations.",
+          "The festive spirit of Durga Puja, pleasant weather, and cultural events make October an ideal time to explore Kolkata."
+        ]
+      },
+      {
+        "tag": "durga_puja_kolkata",
+        "patterns": [
+          "Tell me about Durga Puja in Kolkata",
+          "Information on Kolkata's Durga Puja",
+          "What is special about Durga Puja in Kolkata?"
+        ],
+        "responses": [
+          "Durga Puja in Kolkata is a grand festival celebrated with immense enthusiasm. It showcases beautiful pandals, artistic idols, and vibrant cultural events.",
+          "Kolkata's Durga Puja is renowned for its elaborate pandals, traditional rituals, delicious food, and the lively atmosphere that engulfs the city.",
+          "Experience the essence of Durga Puja in Kolkata with mesmerizing decorations, cultural performances, and the spirit of festivity across the city."
+        ]
+      },
+      {
+        "tag": "pandal_hopping_kolkata",
+        "patterns": [
+          "I want to go pandal hopping during Durga Puja in Kolkata",
+          "Suggest a plan for visiting pandals during Durga Puja in Kolkata",
+          "Need a routine for exploring Durga Puja pandals in Kolkata"
+        ],
+        "responses": [
+          "For pandal hopping during Durga Puja in Kolkata, plan your route considering famous pandals like Bagbazar, Kumartuli Park, and College Square.",
+          "Start your pandal hopping tour by visiting popular pandals such as Ekdalia Evergreen, Suruchi Sangha, and Bosepukur Sitala Mandir.",
+          "A suggested routine for pandal hopping in Kolkata during Durga Puja includes exploring pandals in Salt Lake, Jodhpur Park, and Santoshpur Lake Pally."
+        ]
+      },
+      {
+        "tag": "durga_puja_pandel_hopping",
+        "patterns": [
+          "Planning for Durga Puja pandal hopping in Kolkata",
+          "Best time to visit Durga Puja pandals in Kolkata",
+          "What's the routine for pandal hopping during Durga Puja in Kolkata?"
+        ],
+        "responses": [
+          "Durga Puja pandal hopping in Kolkata is a great experience! It's best to start early evening and go till late night to explore various pandals.",
+          "Plan your route to cover different areas of Kolkata. Start with popular pandals and then move to less crowded ones.",
+          "Weekdays usually have fewer crowds compared to weekends. Early mornings and late evenings are often the best times to visit pandals."
+        ]
+      },
+      {
+        "tag": "durga_puja_history",
+        "patterns": [
+          "Tell me about the history of Durga Puja in Kolkata",
+          "What is the significance of Durga Puja in Kolkata's history?",
+          "Can you share the heritage of Durga Puja celebrations in Kolkata?"
+        ],
+        "responses": [
+          "Durga Puja in Kolkata dates back to the 16th century when it was initiated by Raja Nabakrishna Deb of Shobhabazar Rajbari.",
+          "The festival gained popularity during the British era and evolved into a grand celebration symbolizing Bengali culture and heritage.",
+          "Kolkata's Durga Puja blends religious traditions with artistic grandeur, reflecting the city's rich cultural heritage and unity."
+        ]
+      },
+      {
+        "tag": "unesco_recognition",
+        "patterns": [
+          "Is Kolkata's Durga Puja recognized by UNESCO?",
+          "What did UNESCO say about Durga Puja in Kolkata?",
+          "Has Durga Puja in Kolkata received UNESCO recognition?"
+        ],
+        "responses": [
+          "Kolkata's Durga Puja is celebrated as a part of 'Intangible Cultural Heritage' and has been inscribed by UNESCO.",
+          "UNESCO acknowledged Kolkata's Durga Puja as a vibrant social and cultural event that fosters community integration and creativity."
+        ]
+      },
+      {
+        "tag": "tourist_attractions",
+        "patterns": [
+          "What are the tourist attractions during Durga Puja in Kolkata?",
+          "Can you suggest places to visit during Durga Puja in Kolkata?",
+          "Which areas are must-visit for tourists during Durga Puja in Kolkata?"
+        ],
+        "responses": [
+          "Notable places to visit during Durga Puja in Kolkata include Kumartuli (potters' colony), pandals like College Square, Bagbazar, and Maddox Square.",
+          "Explore North Kolkata for traditional celebrations and South Kolkata for thematic and innovative pandals during Durga Puja."
+        ]
+      },
+      {
+        "tag": "booking_app",
+        "patterns": [
+          "How can I book food or accommodations in Kolkata?",
+          "Is there an app to book hotels and restaurants in Kolkata?",
+          "Recommend an app for ordering food and staying in Kolkata."
+        ],
+        "responses": [
+          "Our app allows you to book hotels and restaurants in Kolkata conveniently.",
+          "You can use our app to book orders for food and accommodations in Kolkata hassle-free.",
+          "With our app, you can easily order food and make reservations for stays in Kolkata using modern technology."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata",
+        "patterns": [
+          "Best places to visit in Kolkata in January",
+          "Where to go in Kolkata during January",
+          "Reasons to visit Kolkata in January"
+        ],
+        "responses": [
+          "In January, visit Kolkata to experience the Kolkata International Film Festival and explore cultural events like Kolkata Book Fair and Saras Mela."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_february",
+        "patterns": [
+          "Best places to visit in Kolkata in February",
+          "Where to go in Kolkata during February",
+          "Reasons to visit Kolkata in February"
+        ],
+        "responses": [
+          "February offers the joyous celebration of Saraswati Puja, along with exploring the colorful festivities of Basanta Utsav in Santiniketan and various flower shows across the city."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_march",
+        "patterns": [
+          "Best places to visit in Kolkata in March",
+          "Where to go in Kolkata during March",
+          "Reasons to visit Kolkata in March"
+        ],
+        "responses": [
+          "March in Kolkata brings celebrations like Dol Purnima (Holi), along with events like Kolkata Literary Meet and Kolkata Carnival showcasing the city's rich cultural heritage."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_april",
+        "patterns": [
+          "Best places to visit in Kolkata in April",
+          "Where to go in Kolkata during April",
+          "Reasons to visit Kolkata in April"
+        ],
+        "responses": [
+          "April offers events like Baisakhi and Noboborsho (Bengali New Year), with opportunities to visit Kalighat Temple and participate in various food festivals in the city."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_may",
+        "patterns": [
+          "Best places to visit in Kolkata in May",
+          "Where to go in Kolkata during May",
+          "Reasons to visit Kolkata in May"
+        ],
+        "responses": [
+          "May provides a chance to visit places like Eco Park and Millennium Park, and to witness the celebration of Buddha Purnima in Kolkata."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_june",
+        "patterns": [
+          "Best places to visit in Kolkata in June",
+          "Where to go in Kolkata during June",
+          "Reasons to visit Kolkata in June"
+        ],
+        "responses": [
+          "June offers a pleasant time to explore places like Nicco Park and Science City, along with celebrating Rath Yatra at ISKCON Kolkata."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_july",
+        "patterns": [
+          "Best places to visit in Kolkata in July",
+          "Where to go in Kolkata during July",
+          "Reasons to visit Kolkata in July"
+        ],
+        "responses": [
+          "July brings the chance to enjoy monsoon views at Princep Ghat and explore the historic Marble Palace along with visiting Victoria Memorial Hall."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_august",
+        "patterns": [
+          "Best places to visit in Kolkata in August",
+          "Where to go in Kolkata during August",
+          "Reasons to visit Kolkata in August"
+        ],
+        "responses": [
+          "August offers the celebration of Raksha Bandhan and Janmashtami, along with visiting Indian Museum and attending Durga Puja workshops across the city."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_september",
+        "patterns": [
+          "Best places to visit in Kolkata in September",
+          "Where to go in Kolkata during September",
+          "Reasons to visit Kolkata in September"
+        ],
+        "responses": [
+          "September is a great time to visit Mother House, explore Kalighat Temple, and be part of Ganesh Chaturthi celebrations in Kolkata."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_october",
+        "patterns": [
+          "Best places to visit in Kolkata in October",
+          "Where to go in Kolkata during October",
+          "Reasons to visit Kolkata in October"
+        ],
+        "responses": [
+          "October brings the grandeur of Durga Puja celebrations, exploring Kumartuli, and witnessing the beautiful pandal decorations across the city."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_november",
+        "patterns": [
+          "Best places to visit in Kolkata in November",
+          "Where to go in Kolkata during November",
+          "Reasons to visit Kolkata in November"
+        ],
+        "responses": [
+          "November offers the Kolkata International Film Festival, exploring Botanical Gardens, and attending Kali Puja celebrations in the city."
+        ]
+      },
+      {
+        "tag": "places_to_visit_kolkata_december",
+        "patterns": [
+          "Best places to visit in Kolkata in December",
+          "Where to go in Kolkata during December",
+          "Reasons to visit Kolkata in December"
+        ],
+        "responses": [
+          "December brings joy with Christmas celebrations, exploring Park Street for New Year's Eve, and visiting Eco Tourism Park for winter festivities."
+        ]
+      },
+      {
+        "tag": "minimal_budget_activities_kolkata",
+        "patterns": [
+          "Things to do in Kolkata with minimal money",
+          "What can I enjoy in Kolkata on a tight budget?",
+          "Looking for low-cost activities in Kolkata"
+        ],
+        "responses": [
+          "Explore the vast Maidan area, take a walk, or enjoy some outdoor activities like playing sports or relaxing in nature.",
+          "Visit the iconic Howrah Bridge, take a stroll along the banks of the Hooghly River, or spend time at the Princep Ghat for a peaceful experience.",
+          "Experience the charm of College Street for affordable books, street food, and a glimpse into Kolkata's intellectual heritage."
+        ]
+      },
+      {
+        "tag": "kolkata_activities",
+        "patterns": [
+          "What can I do in Kolkata with 200 rupees?",
+          "What are some enjoyable things to do in Kolkata with 1000 rupees?"
+        ],
+        "responses": [
+          "With 200 rupees in Kolkata, you can visit places like Victoria Memorial, explore Princep Ghat, or enjoy street food at Park Street.",
+          "With a budget of 500 rupees, consider visiting the Indian Museum, take a ferry ride on the Hooghly River, or explore Kalighat Temple.",
+          "For 1000 rupees, you can explore Nicco Park, visit Science City, or enjoy a cultural show at Rabindra Sadan in Kolkata."
+        ]
+      },
+      {
+        "tag": "cuisine_restaurants_kolkata",
+        "patterns": [
+          "Where to find Italian food in Kolkata",
+          "Looking for Chinese restaurants in Kolkata",
+          "Best places for Indian cuisine in Kolkata",
+          "Any recommendations for Continental food in Kolkata"
+        ],
+        "responses": [
+          "You can try Italian cuisine at places like La Cucina, Fabbrica Della Pizza, or Don Giovanni's in Kolkata.",
+          "For authentic Chinese cuisine, visit Beijing, Golden Joy, or Mainland China in Kolkata.",
+          "Explore Indian cuisine at Oh! Calcutta, Kewpie's, or 6 Ballygunge Place for an exquisite culinary experience in Kolkata.",
+          "For Continental dishes, consider dining at Peter Cat, Mocambo, or Flurys in Kolkata."
+        ]
+      },
+      {
+        "tag": "food_history_kolkata",
+        "patterns": [
+          "History of food in Kolkata",
+          "Historical significance of Kolkata cuisine",
+          "Where can I learn about the food history of Kolkata"
+        ],
+        "responses": [
+          "Kolkata has a rich food heritage influenced by various cultures like British, Chinese, and Mughal. It's known for dishes like Rosogolla, Sandesh, Kathi Rolls, and more.",
+          "The city's food history dates back to the colonial era, showcasing a blend of Bengali, European, and Nawabi culinary traditions."
+        ]
+      },
+      {
+        "tag": "vintage_restaurants_kolkata",
+        "patterns": [
+          "Where to find vintage-style restaurants in Kolkata",
+          "Restaurants with old vibes in Kolkata",
+          "Historical restaurants in Kolkata"
+        ],
+        "responses": [
+          "For an old-world charm, try places like Mocambo, Peter Cat, or Flurys which have retained their vintage aura in Kolkata.",
+          "Explore historic eateries like Indian Coffee House, Mitra Cafe, or Nizam's for a taste of Kolkata's nostalgia.",
+          "Restaurants such as Olypub, Trincas, or Kwality Restaurant exude old-world vibes and offer a glimpse into Kolkata's past."
+        ]
+      },
+      {
+        "tag": "food_types",
+        "patterns": [
+          "Where can I find Italian food in Kolkata?",
+          "Recommendations for Italian restaurants in Kolkata",
+          "I'm craving Italian cuisine, any suggestions?"
+        ],
+        "responses": [
+          "For Italian cuisine in Kolkata, consider visiting places like La Cucina, Fabbrica Della Pizza, or Serafina.",
+          "Explore Italian restaurants such as Marco Polo, Romano's, or Amici Cafe for an authentic taste of Italy in Kolkata.",
+          "Italian food enthusiasts can enjoy dishes at restaurants like Little Italy, The Factory Outlet, or Prego."
+        ]
+      },
+      {
+        "tag": "chinese_food",
+        "patterns": [
+          "Where can I find Chinese food in Kolkata?",
+          "Suggest some Chinese restaurants in Kolkata",
+          "Looking for good Chinese cuisine options in Kolkata"
+        ],
+        "responses": [
+          "For Chinese cuisine in Kolkata, check out places like Mainland China, Beijing Restaurant, or Kim Ling.",
+          "Explore Chinese restaurants such as Red Hot Chilli Pepper, Golden Joy, or Asia Kitchen for delightful Chinese dishes in Kolkata.",
+          "Chinese food lovers can indulge at restaurants like BarBQ, China Pearl, or Chopsticks."
+        ]
+      },
+      {
+        "tag": "continental_food",
+        "patterns": [
+          "Recommendations for Continental food in Kolkata",
+          "Where to find Continental cuisine in Kolkata",
+          "Looking for Continental restaurants in Kolkata"
+        ],
+        "responses": [
+          "For Continental cuisine in Kolkata, consider visiting places like Peter Cat, Mocambo, or Flurys.",
+          "Explore Continental restaurants such as Fire And Ice Pizzeria, TGI Friday's, or The Bridge for a taste of European flavors in Kolkata.",
+          "Indulge in Continental dishes at restaurants like Casa Kitchen, Oasis Restaurant, or Blue And Beyond."
+        ]
+      },
+      {
+        "tag": "indian_food",
+        "patterns": [
+          "Where can I find Indian food in Kolkata?",
+          "Recommendations for Indian restaurants in Kolkata",
+          "I'm looking for good Indian cuisine options in Kolkata"
+        ],
+        "responses": [
+          "For authentic Indian cuisine in Kolkata, check out places like Kewpies, 6 Ballygunge Place, or Oh! Calcutta.",
+          "Explore Indian restaurants such as Bhojohori Manna, Arsalan, or Balwant Singh's Eating House for delicious Indian dishes in Kolkata.",
+          "Savor Indian delicacies at restaurants like Suruchi, Bijoli Grill, or Aaheli."
+        ]
+      },
+      {
+        "tag": "food_history",
+        "patterns": [
+          "Tell me about the history of food in Kolkata",
+          "I want to know about Kolkata's food history",
+          "Can you provide some insights into Kolkata's food culture?"
+        ],
+        "responses": [
+          "Kolkata's food history dates back to the colonial era, blending influences from British, Portuguese, and Mughal cuisines.",
+          "The city's culinary heritage includes iconic dishes like Kolkata Biryani, Kathi Rolls, Sandesh, and Rasgulla.",
+          "Famous for its street food and sweet treats, Kolkata's food culture reflects a blend of diverse flavors and traditions."
+        ]
+      },
+      {
+        "tag": "historic_restaurants",
+        "patterns": [
+          "Where can I find old vibe restaurants in Kolkata?",
+          "Recommendations for vintage-style restaurants in Kolkata",
+          "I want to experience the old charm of Kolkata in restaurants"
+        ],
+        "responses": [
+          "For an old-world vibe, consider dining at places like Mocambo, Flurys, or Peter Cat.",
+          "Experience the nostalgia at restaurants such as Kwality, Olypub, or The Tea House.",
+          "For vintage feels, visit places like Paramount Sherbets, Indian Coffee House, or Blue Sky Cafe."
+        ]
+      },
+      {
+        "tag": "minimal_budget_restaurants",
+        "patterns": [
+          "Suggest budget-friendly restaurants in Kolkata",
+          "Looking for affordable food options in Kolkata",
+          "Recommendations for cheap eats in Kolkata"
+        ],
+        "responses": [
+          "For a minimal budget, consider dining at places like Ammini, Anadi Cabin, or Mitra Cafe for pocket-friendly meals.",
+          "Explore options like Gangaur, Tasty Corner, or Annapurna Cabin for inexpensive yet delicious food in Kolkata.",
+          "For affordable eats, try restaurants such as Bedouin, Shyam Bazaar Sweets, or Royal Indian Hotel."
+        ]
+      },
+      {
+        "tag": "average_budget_restaurants",
+        "patterns": [
+          "Where can I find moderately priced restaurants in Kolkata?",
+          "Recommendations for average-budget restaurants in Kolkata",
+          "Looking for mid-range dining options in Kolkata"
+        ],
+        "responses": [
+          "For an average budget, consider dining at places like Barbeque Nation, Aminia, or Bar-B-Q.",
+          "Explore options like Arsalan, 6 Ballygunge Place, or Momo I Am for mid-range dining experiences in Kolkata.",
+          "For moderately priced meals, visit restaurants such as Asia Kitchen, Oh! Calcutta, or TGI Friday's."
+        ]
+      },
+      {
+        "tag": "highest_budget_restaurants",
+        "patterns": [
+          "Recommendations for high-end restaurants in Kolkata",
+          "Where can I find luxurious dining options in Kolkata?",
+          "I want to dine at premium restaurants in Kolkata"
+        ],
+        "responses": [
+          "For a high budget, consider dining at places like Dum Pukht, ITC Sonar, or The Oberoi Grand for a luxurious dining experience in Kolkata.",
+          "Explore high-end restaurants such as The Westin Kolkata Rajarhat, JW Marriott Hotel Kolkata, or Taj Bengal for a premium culinary journey in Kolkata.",
+          "Indulge in lavish dining experiences at restaurants like The Gateway Hotel EM Bypass, Hyatt Regency Kolkata, or Novotel Kolkata Hotel and Residences."
+        ]
+      }
+    
+  
+  
+    
+
+
+
+]}
